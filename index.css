@@ -52,10 +52,14 @@ body {
 .section-title {
   text-align: center;
   font-size: 2.5rem;
-  background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: white;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   margin-bottom: 3rem;
   font-weight: 600;
 }
@@ -125,10 +129,14 @@ body {
 .nav-logo {
   font-size: 1.8rem;
   font-weight: 700;
-  background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: white;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   text-decoration: none;
 }
 
@@ -140,7 +148,13 @@ body {
 
 .nav-link {
   text-decoration: none;
-  color: var(--dark-gray);
+  color: white;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem 1.5rem;
+  border-radius: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   font-weight: 600;
   transition: all 0.3s ease;
   padding: 0.5rem 1rem;
@@ -163,10 +177,14 @@ body {
   position: relative;
   background: none;
   border: none;
-  background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: white;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   cursor: pointer;
   padding: 0.5rem;
   border-radius: 50%;
@@ -227,17 +245,27 @@ body {
   font-size: 3.5rem;
   font-weight: 700;
   line-height: 1.2;
-  background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: white;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .hero-content p {
   font-size: 1.2rem;
   margin: 1.5rem auto;
   max-width: 600px;
-  color: var(--dark-gray);
+  color: white;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem 1.5rem;
+  border-radius: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .hero-buttons {
@@ -278,17 +306,27 @@ body {
   font-size: 3.5rem;
   font-weight: 700;
   line-height: 1.2;
-  background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: white;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .hero-content p {
   font-size: 1.2rem;
   margin: 1.5rem auto;
   max-width: 600px;
-  color: var(--dark-gray);
+  color: white;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem 1.5rem;
+  border-radius: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .hero-buttons {
@@ -315,15 +353,25 @@ body {
 .feature-item svg {
   width: 40px;
   height: 40px;
-  background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: white;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .feature-item span {
   font-weight: 600;
-  color: var(--dark-gray);
+  color: white;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem 1.5rem;
+  border-radius: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 
@@ -367,23 +415,39 @@ body {
   font-weight: 600;
   line-height: 1.2;
   margin-bottom: 1.5rem;
-  color: var(--dark-gray);
+  color: white;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem 1.5rem;
+  border-radius: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .video-title-accent {
   font-family: 'Cormorant Garamond', serif;
   font-style: italic;
   font-weight: 500;
-  background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: white;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .video-description {
   font-size: 1.1rem;
   line-height: 1.7;
-  color: var(--dark-gray);
+  color: white;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem 1.5rem;
+  border-radius: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   margin-bottom: 2.5rem;
   font-weight: 400;
 }
@@ -410,7 +474,13 @@ body {
 
 .video-feature span {
   font-weight: 500;
-  color: var(--dark-gray);
+  color: white;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem 1.5rem;
+  border-radius: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   font-size: 0.95rem;
 }
 
@@ -422,19 +492,19 @@ body {
 }
 
 .video-placeholder {
-  width: 1280px;
-  height: 720px;
+  width: 600px;
+  height: 338px;
   max-width: 100%;
   aspect-ratio: 16/9;
   background: linear-gradient(135deg, var(--peach) 0%, var(--soft-pink) 50%, var(--lavender) 100%);
-  border-radius: 2rem;
+  border-radius: 1.5rem;
   position: relative;
   overflow: hidden;
   box-shadow: 
-    0 20px 60px rgba(248, 181, 193, 0.3),
+    0 15px 40px rgba(248, 181, 193, 0.3),
     0 0 0 1px rgba(248, 181, 193, 0.2),
     inset 0 1px 0 rgba(255, 255, 255, 0.3);
-  border: 3px solid rgba(248, 181, 193, 0.3);
+  border: 2px solid rgba(248, 181, 193, 0.3);
   cursor: pointer;
   transition: all 0.4s ease;
 }
@@ -465,16 +535,16 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   background: rgba(255, 255, 255, 0.95);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: 
-    0 10px 30px rgba(248, 181, 193, 0.4),
-    0 0 0 4px rgba(248, 181, 193, 0.2);
+    0 8px 25px rgba(248, 181, 193, 0.4),
+    0 0 0 3px rgba(248, 181, 193, 0.2);
   transition: all 0.3s ease;
   z-index: 2;
 }
@@ -487,10 +557,10 @@ body {
 }
 
 .play-icon {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2rem;
+  height: 2rem;
   color: var(--soft-pink);
-  margin-left: 4px;
+  margin-left: 3px;
 }
 
 .video-overlay {
@@ -499,23 +569,23 @@ body {
   left: 0;
   right: 0;
   background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
-  padding: 3rem 2rem 2rem;
-  border-radius: 0 0 2rem 2rem;
+  padding: 2rem 1.5rem 1.5rem;
+  border-radius: 0 0 1.5rem 1.5rem;
   z-index: 1;
 }
 
 .video-overlay-title {
   font-family: 'Playfair Display', serif;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: 600;
   color: white;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .video-overlay-subtitle {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   font-style: italic;
   color: rgba(255, 255, 255, 0.9);
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
@@ -608,15 +678,25 @@ body {
 
 .service-card h3 {
   font-size: 1.5rem;
-  background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: white;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   margin-bottom: 1rem;
 }
 
 .service-card p {
-  color: var(--dark-gray);
+  color: white;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem 1.5rem;
+  border-radius: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   margin-bottom: 1.5rem;
 }
 
@@ -644,10 +724,14 @@ body {
 }
 .prices-table th {
     background-color: var(--blush-pink-light);
-    background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+    color: white;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
     font-weight: 600;
 }
 .prices-policies {
@@ -659,10 +743,14 @@ body {
     box-shadow: var(--shadow);
 }
 .prices-policies h3 {
-    background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+    color: white;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
     margin-bottom: 1rem;
 }
 .prices-policies ul {
@@ -725,10 +813,14 @@ body {
     min-width: 300px;
 }
 .booking-option h3 {
-    background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+    color: white;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
     margin-bottom: 1rem;
     text-align: center;
 }
@@ -769,10 +861,14 @@ body {
 .form-confirmation {
     background-color: var(--blush-pink-light);
     border: 1px solid var(--rose-gold);
-    background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+    color: white;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 1rem;
     border-radius: var(--border-radius);
     text-align: center;
@@ -825,7 +921,13 @@ body {
 
 .faq-answer p {
   padding: 0 1.5rem 1.5rem;
-  color: var(--dark-gray);
+  color: white;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem 1.5rem;
+  border-radius: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .faq-answer.open {
@@ -849,10 +951,14 @@ body {
     min-width: 300px;
 }
 .contact-info h3 {
-    background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+    color: white;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
     margin-bottom: 1rem;
 }
 .contact-info p {
@@ -864,10 +970,14 @@ body {
 .contact-info svg {
     width: 20px;
     height: 20px;
-    background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+    color: white;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 .contact-map {
     flex: 1.5;
@@ -998,16 +1108,26 @@ body {
   background: none;
   border: none;
   font-size: 2rem;
-  color: var(--dark-gray);
+  color: white;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem 1.5rem;
+  border-radius: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   cursor: pointer;
   z-index: 1;
 }
 
 .modal-close:hover {
-  background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: white;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .product-details {
@@ -1031,15 +1151,25 @@ body {
 }
 
 .product-info h2 {
-  background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: white;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   margin-bottom: 1rem;
 }
 
 .product-description {
-  color: var(--dark-gray);
+  color: white;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem 1.5rem;
+  border-radius: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   margin-bottom: 1.5rem;
   line-height: 1.6;
 }
@@ -1057,14 +1187,24 @@ body {
 .price {
   font-size: 1.5rem;
   font-weight: 700;
-  background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: white;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .duration {
-  color: var(--dark-gray);
+  color: white;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem 1.5rem;
+  border-radius: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   font-weight: 600;
 }
 
@@ -1073,10 +1213,14 @@ body {
 }
 
 .includes-section h4, .addons-section h4 {
-  background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: white;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   margin-bottom: 0.5rem;
 }
 
@@ -1087,15 +1231,25 @@ body {
 
 .includes-section li {
   padding: 0.25rem 0;
-  color: var(--dark-gray);
+  color: white;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem 1.5rem;
+  border-radius: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .includes-section li:before {
   content: "✓";
-  background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: white;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   font-weight: bold;
   margin-right: 0.5rem;
 }
@@ -1145,10 +1299,14 @@ body {
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: white;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .quantity-controls button:hover {
@@ -1164,10 +1322,14 @@ body {
 }
 
 .total-section h3 {
-  background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: white;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   margin-bottom: 0.5rem;
 }
 
@@ -1201,10 +1363,14 @@ body {
 }
 
 .cart-header h2 {
-  background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: white;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   margin: 0;
 }
 
@@ -1225,15 +1391,25 @@ body {
 }
 
 .item-info h4 {
-  background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: white;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   margin-bottom: 0.5rem;
 }
 
 .item-info p {
-  color: var(--dark-gray);
+  color: white;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem 1.5rem;
+  border-radius: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   font-size: 0.9rem;
   margin-bottom: 0.5rem;
 }
@@ -1246,10 +1422,14 @@ body {
 
 .addon-tag {
   background: var(--blush-pink-light);
-  background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: white;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   padding: 0.25rem 0.5rem;
   border-radius: 0.5rem;
   font-size: 0.75rem;
@@ -1264,10 +1444,14 @@ body {
 
 .item-total {
   font-weight: 600;
-  background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: white;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .remove-btn {
@@ -1297,10 +1481,14 @@ body {
 }
 
 .cart-total h3 {
-  background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: white;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   margin-bottom: 0.5rem;
 }
 
@@ -1359,16 +1547,26 @@ body {
 }
 
 .testimonial-info h4 {
-    background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+    color: white;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
     margin-bottom: 0.25rem;
     font-size: 1.1rem;
 }
 
 .testimonial-info p {
-    color: var(--dark-gray);
+    color: white;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem 1.5rem;
+  border-radius: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
     font-size: 0.9rem;
     margin-bottom: 0.5rem;
 }
@@ -1385,7 +1583,13 @@ body {
 }
 
 .testimonial-text {
-    color: var(--dark-gray);
+    color: white;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem 1.5rem;
+  border-radius: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
     line-height: 1.6;
     font-style: italic;
     margin: 0;
@@ -1424,16 +1628,26 @@ body {
 }
 
 .process-step h3 {
-    background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+    color: white;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
     margin-bottom: 1rem;
     font-size: 1.5rem;
 }
 
 .process-step p {
-    color: var(--dark-gray);
+    color: white;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem 1.5rem;
+  border-radius: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
     line-height: 1.6;
 }
 
@@ -1483,16 +1697,26 @@ body {
 }
 
 .promotion-card h3 {
-    background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+    color: white;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
     margin-bottom: 1rem;
     font-size: 1.5rem;
 }
 
 .promotion-card p {
-    color: var(--dark-gray);
+    color: white;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem 1.5rem;
+  border-radius: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
     margin-bottom: 1.5rem;
     line-height: 1.6;
 }
@@ -1506,16 +1730,26 @@ body {
 }
 
 .promo-code span {
-    background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+    color: white;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
     font-weight: 600;
     font-size: 1.1rem;
 }
 
 .promo-valid {
-    color: var(--dark-gray);
+    color: white;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem 1.5rem;
+  border-radius: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
     font-size: 0.9rem;
 }
 
@@ -1577,10 +1811,14 @@ body {
         display: block; /* Placeholder for a hamburger menu icon */
         background: none;
         border: none;
-        background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+        color: white;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
         font-size: 2rem;
     }
 

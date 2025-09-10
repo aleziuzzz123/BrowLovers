@@ -1379,6 +1379,50 @@ const Promotions = () => {
     );
 };
 
+// Video Section Component
+const Video = () => (
+    <section className="video-section">
+        <div className="container">
+            <div className="video-content">
+                <div className="video-text">
+                    <h2 className="video-title">
+                        Descubre la <span className="video-title-accent">magia</span> de BrowLovers
+                    </h2>
+                    <p className="video-description">
+                        Ve cómo transformamos tu mirada con técnicas profesionales y materiales premium. 
+                        Cada tratamiento es una experiencia única diseñada especialmente para ti.
+                    </p>
+                    <div className="video-features">
+                        <div className="video-feature">
+                            <Icon path="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" className="video-feature-icon" />
+                            <span>Técnicas Profesionales</span>
+                        </div>
+                        <div className="video-feature">
+                            <Icon path="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" className="video-feature-icon" />
+                            <span>Resultados Garantizados</span>
+                        </div>
+                        <div className="video-feature">
+                            <Icon path="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" className="video-feature-icon" />
+                            <span>Materiales Premium</span>
+                        </div>
+                    </div>
+                </div>
+                <div className="video-container">
+                    <div className="video-placeholder">
+                        <div className="video-play-button">
+                            <Icon path="M8 5v14l11-7z" className="play-icon" />
+                        </div>
+                        <div className="video-overlay">
+                            <h3 className="video-overlay-title">BrowLovers Experience</h3>
+                            <p className="video-overlay-subtitle">Transformación Profesional</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+);
+
 const App = () => {
     return (
     <>
@@ -1386,6 +1430,7 @@ const App = () => {
         <main>
             <Hero />
             <Services />
+            <Video />
             <Prices />
             <Gallery />
             <WhyUs />

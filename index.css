@@ -6,6 +6,7 @@
   --rose-gold: #d4a574;
   --mauve: #c4a5a5;
   --light-mauve: #f0e6e6;
+  --catalog-brown: #8b6f47;
   --cream-white: #fefefe;
   --light-gray: #f8f8f8;
   --dark-gray: #6b5b73;
@@ -74,29 +75,29 @@ body {
 }
 
 .btn-primary {
-  background-color: var(--dusty-rose);
+  background-color: var(--catalog-brown);
   color: white;
   border: none;
-  box-shadow: 0 2px 8px rgba(212, 165, 165, 0.2);
+  box-shadow: 0 2px 8px rgba(139, 111, 71, 0.3);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(212, 165, 165, 0.3);
-  background-color: var(--mauve);
+  box-shadow: 0 4px 12px rgba(139, 111, 71, 0.4);
+  background-color: #7a5f3f;
 }
 
 .btn-secondary {
   background-color: transparent;
-  color: var(--dusty-rose);
-  border: 1px solid var(--dusty-rose);
+  color: var(--catalog-brown);
+  border: 2px solid var(--catalog-brown);
 }
 
 .btn-secondary:hover {
-  background-color: var(--dusty-rose);
+  background-color: var(--catalog-brown);
   color: white;
   transform: translateY(-2px);
-  box-shadow: 0 2px 8px rgba(212, 165, 165, 0.2);
+  box-shadow: 0 2px 8px rgba(139, 111, 71, 0.3);
 }
 
 /* ------------------- */
@@ -229,11 +230,8 @@ body {
     radial-gradient(circle at 85% 35%, rgba(255, 255, 255, 0.3) 1.5px, transparent 1.5px),
     radial-gradient(circle at 45% 75%, rgba(255, 255, 255, 0.35) 2px, transparent 2px),
     radial-gradient(circle at 95% 85%, rgba(255, 255, 255, 0.3) 1.5px, transparent 1.5px),
-    radial-gradient(circle at 5% 95%, rgba(255, 255, 255, 0.4) 2px, transparent 2px),
-    /* Flicker elements */
-    linear-gradient(45deg, transparent 48%, rgba(255, 255, 255, 0.2) 49%, rgba(255, 255, 255, 0.2) 51%, transparent 52%),
-    linear-gradient(-45deg, transparent 48%, rgba(255, 255, 255, 0.2) 49%, rgba(255, 255, 255, 0.2) 51%, transparent 52%);
-  background-size: 150px 150px, 100px 100px, 180px 180px, 120px 120px, 160px 160px, 200px 200px, 200px 200px;
+    radial-gradient(circle at 5% 95%, rgba(255, 255, 255, 0.4) 2px, transparent 2px);
+  background-size: 150px 150px, 100px 100px, 180px 180px, 120px 120px, 160px 160px;
   animation: sparkle 4s ease-in-out infinite alternate;
 }
 

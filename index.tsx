@@ -13,7 +13,7 @@ const Icon = ({ path, className = '', ...props }) => (
 const servicesData = [
     { 
         id: 'eyebrows', 
-        name: '✨ Cejas Perfectas', 
+        name: 'Cejas Perfectas', 
         description: 'Transforma tu mirada con cejas que realzan tu belleza natural. Técnicas profesionales que duran hasta 6 semanas.', 
         price: 'Desde $450', 
         duration: '45-60 min', 
@@ -23,11 +23,11 @@ const servicesData = [
         popular: true,
         benefits: ['Resultados naturales', 'Duración hasta 6 semanas', 'Técnicas certificadas'],
         testimonial: '"Mis cejas nunca se vieron tan perfectas" - María',
-        icon: 'M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z'
+        icon: 'M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z'
     },
     { 
         id: 'lashes', 
-        name: '👁️ Mirada de Impacto', 
+        name: 'Mirada de Impacto', 
         description: 'Despierta cada mañana con pestañas perfectas. Lifting y extensiones que transforman tu mirada completamente.', 
         price: 'Desde $600', 
         duration: '60-120 min', 
@@ -37,11 +37,11 @@ const servicesData = [
         popular: true,
         benefits: ['Efecto despierta', 'Duración hasta 8 semanas', 'Materiales premium'],
         testimonial: '"Me siento como una diosa cada día" - Ana',
-        icon: 'M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z'
+        icon: 'M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z'
     },
     { 
         id: 'packages', 
-        name: '💎 Pack Completo', 
+        name: 'Pack Completo', 
         description: 'La experiencia definitiva de belleza. Combina todos nuestros servicios premium y ahorra hasta $500.', 
         price: 'Desde $1200', 
         duration: '120-180 min', 
@@ -1000,42 +1000,26 @@ const Services = ({ onServiceClick }) => (
     <section id="services" className="section services-section">
         <div className="container">
             <div className="services-header">
-                <h2 className="section-title">✨ Nuestros Servicios</h2>
+                <h2 className="section-title">Nuestros Servicios</h2>
                 <p className="section-subtitle">
-                    Transformamos tu belleza natural con técnicas profesionales que te harán sentir radiante cada día
+                    Transformamos tu belleza natural con técnicas profesionales
                 </p>
             </div>
             
             <div className="services-grid">
                 {servicesData.map(service => (
-                    <div key={service.id} className={`service-card ${service.popular ? 'popular' : ''}`}>
+                    <div key={service.id} className="service-card">
                         {service.popular && (
-                            <div className="popular-badge">
-                                <Icon path="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" className="star-icon" />
-                                Más Popular
-                            </div>
+                            <div className="popular-badge">Más Popular</div>
                         )}
-                        
+
                         <div className="service-icon">
                             <Icon path={service.icon} className="service-icon-svg" />
                         </div>
-                        
+
                         <h3 className="service-name">{service.name}</h3>
                         <p className="service-description">{service.description}</p>
-                        
-                        <div className="service-benefits">
-                            {service.benefits.map((benefit, index) => (
-                                <div key={index} className="benefit-item">
-                                    <Icon path="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" className="check-icon" />
-                                    <span>{benefit}</span>
-                                </div>
-                            ))}
-                        </div>
-                        
-                        <div className="service-testimonial">
-                            <p>"{service.testimonial}"</p>
-                        </div>
-                        
+
                         <div className="service-pricing">
                             <div className="price-info">
                                 <span className="price">{service.price}</span>
@@ -1045,10 +1029,10 @@ const Services = ({ onServiceClick }) => (
                                 <div className="discount-badge">{service.discount}</div>
                             )}
                         </div>
-                        
+
                         <div className="service-actions">
-                            <button 
-                                className="btn btn-secondary" 
+                            <button
+                                className="btn btn-secondary"
                                 onClick={() => onServiceClick(service)}
                             >
                                 Ver Detalles
@@ -1059,16 +1043,6 @@ const Services = ({ onServiceClick }) => (
                         </div>
                     </div>
                 ))}
-            </div>
-            
-            <div className="services-cta">
-                <div className="cta-content">
-                    <h3>¿Lista para transformar tu belleza?</h3>
-                    <p>Reserva tu cita hoy y descubre por qué miles de mujeres confían en nosotros</p>
-                    <a href="#booking" className="btn btn-primary btn-large">
-                        Reservar Mi Cita
-                    </a>
-                </div>
             </div>
         </div>
     </section>
@@ -1285,7 +1259,7 @@ const Footer = () => (
             <div className="footer-content">
                 <div className="footer-section">
                     <div className="footer-brand">
-                        <h3 className="footer-logo">✨ BrowLovers</h3>
+                        <h3 className="footer-logo">BrowLovers</h3>
                         <p className="footer-tagline">Transformamos tu belleza natural con técnicas profesionales que te harán sentir radiante cada día.</p>
                         <div className="social-links">
                             <a href="https://instagram.com/browlovers" className="social-link" aria-label="Instagram">
@@ -1568,59 +1542,35 @@ const ServiceModal = ({ service, isOpen, onClose }) => {
 
     return (
         <div className="modal-overlay" onClick={onClose}>
-            <div className="modal-content service-modal" onClick={e => e.stopPropagation()}>
+            <div className="modal-content" onClick={e => e.stopPropagation()}>
                 <button className="modal-close" onClick={onClose}>
                     <Icon path="M6 18L18 6M6 6l12 12" />
                 </button>
                 
-                <div className="service-modal-header">
-                    <h2 className="service-modal-title">{service.name}</h2>
-                    <div className="service-modal-price">{service.price}</div>
-                </div>
+                <div className="service-modal">
+                    <div className="service-modal-header">
+                        <h2 className="service-modal-title">{service.name}</h2>
+                        <div className="service-modal-price">{service.price}</div>
+                    </div>
 
-                <div className="service-modal-body">
-                    <div className="service-details-grid">
-                        <div className="service-detail-section">
-                            <h3>Descripción</h3>
-                            <p>{service.description}</p>
-                        </div>
-
-                        <div className="service-detail-section">
-                            <h3>Duración</h3>
-                            <p>{service.duration}</p>
-                        </div>
-
-                        <div className="service-detail-section">
-                            <h3>Incluye</h3>
+                    <div className="service-modal-body">
+                        <p className="service-description">{service.description}</p>
+                        
+                        <div className="service-details">
+                            <h3>¿Qué incluye?</h3>
                             <ul className="service-includes">
                                 {service.items.map((item, index) => (
-                                    <li key={index}>
-                                        <Icon path="M5 13l4 4L19 7" className="check-icon" />
-                                        {item}
-                                    </li>
+                                    <li key={index}>{item}</li>
                                 ))}
                             </ul>
                         </div>
-
-                        <div className="service-detail-section">
-                            <h3>Beneficios</h3>
-                            <ul className="service-benefits">
-                                <li>Resultados naturales y duraderos</li>
-                                <li>Técnicas profesionales certificadas</li>
-                                <li>Materiales premium de alta calidad</li>
-                                <li>Garantía de satisfacción</li>
-                            </ul>
-                        </div>
                     </div>
-                </div>
 
-                <div className="service-modal-footer">
-                    <button className="btn btn-secondary" onClick={onClose}>
-                        Cerrar
-                    </button>
-                    <a href="#booking" className="btn btn-primary" onClick={onClose}>
-                        Reservar Ahora
-                    </a>
+                    <div className="service-modal-footer">
+                        <a href="#booking" className="btn btn-primary" onClick={onClose}>
+                            Reservar Ahora
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

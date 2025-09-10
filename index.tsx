@@ -1417,10 +1417,16 @@ const Video = () => (
                     </div>
                 </div>
                 <div className="video-container">
-                    <div className="video-placeholder">
-                        <div className="video-play-button">
-                            <Icon path="M8 5v14l11-7z" className="play-icon" />
-                        </div>
+                    <div className="video-wrapper">
+                        <video 
+                            className="hero-video"
+                            poster="/images/videos/video-poster.jpg"
+                            controls
+                            preload="metadata"
+                        >
+                            <source src="/images/videos/browloversvideo.mp4" type="video/mp4" />
+                            Tu navegador no soporta el elemento de video.
+                        </video>
                         <div className="video-overlay">
                             <h3 className="video-overlay-title">BrowLovers Experience</h3>
                             <p className="video-overlay-subtitle">Transformación Profesional</p>

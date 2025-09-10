@@ -974,16 +974,16 @@ const Hero = () => (
                 <div className="hero-badge">Belleza de mirada</div>
                 <h1>Extensiones & Lifting de pestañas con acabado de lujo</h1>
                 <p>Somos especialistas en crear nuevas miradas. Reserva con 30% de anticipo, trabajamos con materiales premium y ofrecemos garantía de 48 horas.</p>
-                <div className="hero-features">
-                    <div className="feature-item">
+            <div className="hero-features">
+                <div className="feature-item">
                         <Icon path="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" className="feature-icon" />
                         <span>Materiales Premium</span>
-                    </div>
-                    <div className="feature-item">
+                </div>
+                <div className="feature-item">
                         <Icon path="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" className="feature-icon" />
                         <span>Garantía 48h</span>
-                    </div>
-                    <div className="feature-item">
+                </div>
+                <div className="feature-item">
                         <Icon path="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" className="feature-icon" />
                         <span>Diseño Personalizado</span>
                     </div>
@@ -1083,7 +1083,7 @@ const Services = ({ onServiceClick }) => (
     <section id="services" className="section services-section">
         <div className="container">
             <div className="services-header">
-                <h2 className="section-title">Nuestros Servicios</h2>
+            <h2 className="section-title">Nuestros Servicios</h2>
                 <p className="section-subtitle">
                     Transformamos tu belleza natural con técnicas profesionales
                 </p>
@@ -1091,38 +1091,43 @@ const Services = ({ onServiceClick }) => (
             
             <div className="services-grid">
                 {servicesData.map(service => (
-                    <div key={service.id} className="service-card">
-                        {service.popular && (
-                            <div className="popular-badge">Más Popular</div>
-                        )}
-
-                        <div className="service-icon">
-                            <Icon path={service.icon} className="service-icon-svg" />
-                        </div>
-
-                        <h3 className="service-name">{service.name}</h3>
-                        <p className="service-description">{service.description}</p>
-
-                        <div className="service-pricing">
-                            <div className="price-info">
-                                <span className="price">{service.price}</span>
-                                <span className="duration">{service.duration}</span>
+                    <div key={service.id} className={`service-card ${service.popular ? 'popular' : ''}`}>
+                        <div className="service-card-content">
+                            <div className="service-card-header">
+                                <div className="service-icon-container">
+                                    <div className="service-icon">
+                                        <Icon path={service.icon} className="service-icon-svg" />
+                                    </div>
+                                    {service.popular && (
+                                        <div className="popular-badge">Más Popular</div>
+                                    )}
+                                </div>
                             </div>
-                            {service.discount && (
-                                <div className="discount-badge">{service.discount}</div>
-                            )}
-                        </div>
 
-                        <div className="service-actions">
-                            <button
-                                className="btn btn-secondary"
-                                onClick={() => onServiceClick(service)}
-                            >
-                                Ver Detalles
-                            </button>
-                            <a href="#booking" className="btn btn-primary">
-                                Reservar Ahora
-                            </a>
+                            <h3 className="service-name">{service.name}</h3>
+                            <p className="service-description">{service.description}</p>
+
+                            <div className="service-pricing">
+                                <div className="price-info">
+                                    <span className="price">{service.price}</span>
+                                    <span className="duration">{service.duration}</span>
+                                </div>
+                                {service.discount && (
+                                    <div className="discount-badge">{service.discount}</div>
+                                )}
+                            </div>
+
+                            <div className="service-actions">
+                                <button
+                                    className="btn btn-secondary"
+                                    onClick={() => onServiceClick(service)}
+                                >
+                                    Ver Detalles
+                                </button>
+                                <a href="#booking" className="btn btn-primary">
+                                    Reservar Ahora
+                                </a>
+                            </div>
                         </div>
                     </div>
                 ))}
@@ -1399,7 +1404,7 @@ const Footer = () => (
             
             <div className="footer-bottom">
                 <div className="footer-legal">
-                    <p>&copy; {new Date().getFullYear()} BrowLovers Cancún. Todos los derechos reservados.</p>
+            <p>&copy; {new Date().getFullYear()} BrowLovers Cancún. Todos los derechos reservados.</p>
                     <div className="legal-links">
                         <a href="#" className="legal-link">Términos y Condiciones</a>
                         <a href="#" className="legal-link">Aviso de Privacidad</a>

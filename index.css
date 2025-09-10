@@ -52,16 +52,10 @@ body {
 .section-title {
   text-align: center;
   font-size: 2.5rem;
-  color: white;
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  margin-bottom: 1.5rem;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  padding: 1rem 2rem;
-  border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--dark-gray);
   margin-bottom: 3rem;
   font-weight: 600;
+  font-family: 'Playfair Display', serif;
 }
 
 .btn {
@@ -130,13 +124,13 @@ body {
   font-size: 1.8rem;
   font-weight: 700;
   color: white;
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
   border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   text-decoration: none;
 }
 
@@ -149,7 +143,7 @@ body {
 .nav-link {
   text-decoration: none;
   color: white;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   padding: 1rem 1.5rem;
@@ -178,13 +172,13 @@ body {
   background: none;
   border: none;
   color: white;
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
   border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   cursor: pointer;
   padding: 0.5rem;
   border-radius: 50%;
@@ -246,13 +240,13 @@ body {
   font-weight: 700;
   line-height: 1.2;
   color: white;
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
   border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .hero-content p {
@@ -260,7 +254,7 @@ body {
   margin: 1.5rem auto;
   max-width: 600px;
   color: white;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   padding: 1rem 1.5rem;
@@ -307,13 +301,13 @@ body {
   font-weight: 700;
   line-height: 1.2;
   color: white;
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
   border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .hero-content p {
@@ -321,7 +315,7 @@ body {
   margin: 1.5rem auto;
   max-width: 600px;
   color: white;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   padding: 1rem 1.5rem;
@@ -354,19 +348,19 @@ body {
   width: 40px;
   height: 40px;
   color: white;
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
   border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .feature-item span {
   font-weight: 600;
   color: white;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   padding: 1rem 1.5rem;
@@ -416,7 +410,7 @@ body {
   line-height: 1.2;
   margin-bottom: 1.5rem;
   color: white;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   padding: 1rem 1.5rem;
@@ -429,20 +423,20 @@ body {
   font-style: italic;
   font-weight: 500;
   color: white;
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
   border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .video-description {
   font-size: 1.1rem;
   line-height: 1.7;
   color: white;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   padding: 1rem 1.5rem;
@@ -475,7 +469,7 @@ body {
 .video-feature span {
   font-weight: 500;
   color: white;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   padding: 1rem 1.5rem;
@@ -656,6 +650,168 @@ body {
 /* ------------------- */
 /*  6. Services Section*/
 /* ------------------- */
+.service-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+/* Service Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 2rem;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 2rem;
+  max-width: 600px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.service-modal {
+  padding: 0;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--dark-gray);
+  cursor: pointer;
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.modal-close:hover {
+  background: var(--light-gray);
+  color: var(--soft-pink);
+}
+
+.service-modal-header {
+  background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
+  color: white;
+  padding: 2rem;
+  border-radius: 2rem 2rem 0 0;
+  text-align: center;
+}
+
+.service-modal-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.service-modal-price {
+  font-size: 1.2rem;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+.service-modal-body {
+  padding: 2rem;
+}
+
+.service-details-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.service-detail-section h3 {
+  color: var(--soft-pink);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.service-detail-section p {
+  color: var(--dark-gray);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.service-includes,
+.service-benefits {
+  list-style: none;
+  padding: 0;
+}
+
+.service-includes li,
+.service-benefits li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--dark-gray);
+}
+
+.check-icon {
+  width: 1rem;
+  height: 1rem;
+  color: var(--soft-pink);
+  flex-shrink: 0;
+}
+
+.service-modal-footer {
+  padding: 2rem;
+  border-top: 1px solid var(--light-gray);
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+/* Modal Responsive */
+@media (max-width: 768px) {
+  .modal-overlay {
+    padding: 1rem;
+  }
+  
+  .service-modal-header {
+    padding: 1.5rem;
+  }
+  
+  .service-modal-title {
+    font-size: 1.5rem;
+  }
+  
+  .service-modal-body {
+    padding: 1.5rem;
+  }
+  
+  .service-modal-footer {
+    padding: 1.5rem;
+    flex-direction: column;
+  }
+  
+  .service-actions {
+    flex-direction: column;
+  }
+}
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -678,26 +834,16 @@ body {
 
 .service-card h3 {
   font-size: 1.5rem;
-  color: white;
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  margin-bottom: 1.5rem;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  padding: 1rem 2rem;
-  border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--dark-gray);
   margin-bottom: 1rem;
+  font-weight: 600;
+  font-family: 'Playfair Display', serif;
 }
 
 .service-card p {
-  color: white;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  padding: 1rem 1.5rem;
-  border-radius: 1.5rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  margin-bottom: 1.5rem;
+  color: var(--dark-gray);
+  margin-bottom: 1rem;
+  line-height: 1.6;
 }
 
 /* ------------------- */
@@ -725,13 +871,13 @@ body {
 .prices-table th {
     background-color: var(--blush-pink-light);
     color: white;
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
   border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
     font-weight: 600;
 }
 .prices-policies {
@@ -744,13 +890,13 @@ body {
 }
 .prices-policies h3 {
     color: white;
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
   border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
     margin-bottom: 1rem;
 }
 .prices-policies ul {
@@ -814,13 +960,13 @@ body {
 }
 .booking-option h3 {
     color: white;
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
   border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
     margin-bottom: 1rem;
     text-align: center;
 }
@@ -862,13 +1008,13 @@ body {
     background-color: var(--blush-pink-light);
     border: 1px solid var(--rose-gold);
     color: white;
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
   border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
     padding: 1rem;
     border-radius: var(--border-radius);
     text-align: center;
@@ -922,7 +1068,7 @@ body {
 .faq-answer p {
   padding: 0 1.5rem 1.5rem;
   color: white;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   padding: 1rem 1.5rem;
@@ -952,13 +1098,13 @@ body {
 }
 .contact-info h3 {
     color: white;
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
   border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
     margin-bottom: 1rem;
 }
 .contact-info p {
@@ -971,13 +1117,13 @@ body {
     width: 20px;
     height: 20px;
     color: white;
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
   border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .contact-map {
     flex: 1.5;
@@ -1109,7 +1255,7 @@ body {
   border: none;
   font-size: 2rem;
   color: white;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   padding: 1rem 1.5rem;
@@ -1121,13 +1267,13 @@ body {
 
 .modal-close:hover {
   color: white;
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
   border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .product-details {
@@ -1152,19 +1298,19 @@ body {
 
 .product-info h2 {
   color: white;
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
   border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   margin-bottom: 1rem;
 }
 
 .product-description {
   color: white;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   padding: 1rem 1.5rem;
@@ -1188,18 +1334,18 @@ body {
   font-size: 1.5rem;
   font-weight: 700;
   color: white;
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
   border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .duration {
   color: white;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   padding: 1rem 1.5rem;
@@ -1214,13 +1360,13 @@ body {
 
 .includes-section h4, .addons-section h4 {
   color: white;
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
   border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   margin-bottom: 0.5rem;
 }
 
@@ -1232,7 +1378,7 @@ body {
 .includes-section li {
   padding: 0.25rem 0;
   color: white;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   padding: 1rem 1.5rem;
@@ -1243,13 +1389,13 @@ body {
 .includes-section li:before {
   content: "✓";
   color: white;
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
   border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   font-weight: bold;
   margin-right: 0.5rem;
 }
@@ -1300,13 +1446,13 @@ body {
   justify-content: center;
   font-weight: bold;
   color: white;
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
   border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .quantity-controls button:hover {
@@ -1323,13 +1469,13 @@ body {
 
 .total-section h3 {
   color: white;
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
   border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   margin-bottom: 0.5rem;
 }
 
@@ -1364,13 +1510,13 @@ body {
 
 .cart-header h2 {
   color: white;
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
   border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   margin: 0;
 }
 
@@ -1392,19 +1538,19 @@ body {
 
 .item-info h4 {
   color: white;
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
   border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   margin-bottom: 0.5rem;
 }
 
 .item-info p {
   color: white;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   padding: 1rem 1.5rem;
@@ -1423,13 +1569,13 @@ body {
 .addon-tag {
   background: var(--blush-pink-light);
   color: white;
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
   border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   padding: 0.25rem 0.5rem;
   border-radius: 0.5rem;
   font-size: 0.75rem;
@@ -1445,13 +1591,13 @@ body {
 .item-total {
   font-weight: 600;
   color: white;
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
   border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .remove-btn {
@@ -1482,13 +1628,13 @@ body {
 
 .cart-total h3 {
   color: white;
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
   border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   margin-bottom: 0.5rem;
 }
 
@@ -1548,20 +1694,20 @@ body {
 
 .testimonial-info h4 {
     color: white;
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
   border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
     margin-bottom: 0.25rem;
     font-size: 1.1rem;
 }
 
 .testimonial-info p {
     color: white;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   padding: 1rem 1.5rem;
@@ -1584,7 +1730,7 @@ body {
 
 .testimonial-text {
     color: white;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   padding: 1rem 1.5rem;
@@ -1629,20 +1775,20 @@ body {
 
 .process-step h3 {
     color: white;
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
   border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
     margin-bottom: 1rem;
     font-size: 1.5rem;
 }
 
 .process-step p {
     color: white;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   padding: 1rem 1.5rem;
@@ -1698,20 +1844,20 @@ body {
 
 .promotion-card h3 {
     color: white;
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
   border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
     margin-bottom: 1rem;
     font-size: 1.5rem;
 }
 
 .promotion-card p {
     color: white;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   padding: 1rem 1.5rem;
@@ -1731,20 +1877,20 @@ body {
 
 .promo-code span {
     color: white;
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
   border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
     font-weight: 600;
     font-size: 1.1rem;
 }
 
 .promo-valid {
     color: white;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   padding: 1rem 1.5rem;
@@ -1812,13 +1958,13 @@ body {
         background: none;
         border: none;
         color: white;
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
   border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
         font-size: 2rem;
     }
 

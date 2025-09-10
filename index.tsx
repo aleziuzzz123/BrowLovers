@@ -987,7 +987,7 @@ const Hero = () => (
     </section>
 );
 
-const Services = () => (
+const Services = ({ onServiceClick }) => (
     <section id="services" className="section">
         <div className="container">
             <h2 className="section-title">Nuestros Servicios</h2>
@@ -997,7 +997,16 @@ const Services = () => (
                         <h3>{service.name}</h3>
                         <p>{service.description}</p>
                         <p><strong>{service.duration} | {service.price}</strong></p>
-                        <a href="#booking" className="btn btn-primary" style={{marginTop: '1rem'}}>Reservar</a>
+                        <div className="service-actions">
+                            <button 
+                                className="btn btn-secondary" 
+                                onClick={() => onServiceClick(service)}
+                                style={{marginRight: '0.5rem'}}
+                            >
+                                Ver más
+                            </button>
+                            <a href="#booking" className="btn btn-primary">Reservar</a>
+                        </div>
                     </div>
                 ))}
             </div>
@@ -1423,13 +1432,91 @@ const Video = () => (
     </section>
 );
 
+// Service Detail Modal Component
+const ServiceModal = ({ service, isOpen, onClose }) => {
+    if (!isOpen || !service) return null;
+
+    return (
+        <div className="modal-overlay" onClick={onClose}>
+            <div className="modal-content service-modal" onClick={e => e.stopPropagation()}>
+                <button className="modal-close" onClick={onClose}>
+                    <Icon path="M6 18L18 6M6 6l12 12" />
+                </button>
+                
+                <div className="service-modal-header">
+                    <h2 className="service-modal-title">{service.name}</h2>
+                    <div className="service-modal-price">{service.price}</div>
+                </div>
+
+                <div className="service-modal-body">
+                    <div className="service-details-grid">
+                        <div className="service-detail-section">
+                            <h3>Descripción</h3>
+                            <p>{service.description}</p>
+                        </div>
+
+                        <div className="service-detail-section">
+                            <h3>Duración</h3>
+                            <p>{service.duration}</p>
+                        </div>
+
+                        <div className="service-detail-section">
+                            <h3>Incluye</h3>
+                            <ul className="service-includes">
+                                {service.items.map((item, index) => (
+                                    <li key={index}>
+                                        <Icon path="M5 13l4 4L19 7" className="check-icon" />
+                                        {item}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+
+                        <div className="service-detail-section">
+                            <h3>Beneficios</h3>
+                            <ul className="service-benefits">
+                                <li>Resultados naturales y duraderos</li>
+                                <li>Técnicas profesionales certificadas</li>
+                                <li>Materiales premium de alta calidad</li>
+                                <li>Garantía de satisfacción</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="service-modal-footer">
+                    <button className="btn btn-secondary" onClick={onClose}>
+                        Cerrar
+                    </button>
+                    <a href="#booking" className="btn btn-primary" onClick={onClose}>
+                        Reservar Ahora
+                    </a>
+                </div>
+            </div>
+        </div>
+    );
+};
+
 const App = () => {
+    const [selectedService, setSelectedService] = useState(null);
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const handleServiceClick = (service) => {
+        setSelectedService(service);
+        setIsModalOpen(true);
+    };
+
+    const handleCloseModal = () => {
+        setIsModalOpen(false);
+        setSelectedService(null);
+    };
+
     return (
     <>
         <Header />
         <main>
             <Hero />
-            <Services />
+            <Services onServiceClick={handleServiceClick} />
             <Video />
             <Prices />
             <Gallery />
@@ -1440,6 +1527,11 @@ const App = () => {
         </main>
         <Footer />
         <FloatingButtons />
+        <ServiceModal 
+            service={selectedService} 
+            isOpen={isModalOpen} 
+            onClose={handleCloseModal} 
+        />
     </>
 );
 };

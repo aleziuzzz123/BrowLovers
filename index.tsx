@@ -950,22 +950,43 @@ const FaqItem = ({ item, index, activeIndex, setActiveIndex }) => {
 
 
 // Main App Sections
-const Header = () => (
-    <header className="header">
-        <div className="container nav">
-            <a href="#home" className="nav-logo">BrowLovers</a>
-            <nav>
-                <ul className="nav-links">
-                    <li><a href="#services" className="nav-link">Servicios</a></li>
-                    <li><a href="#gallery" className="nav-link">Galería</a></li>
-                    <li><a href="#booking" className="nav-link">Reserva</a></li>
-                    <li><a href="#contact" className="nav-link">Contacto</a></li>
-                </ul>
-            </nav>
-            <button className="nav-toggle" aria-label="Menu">&#9776;</button>
-        </div>
-    </header>
-);
+const Header = () => {
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+    const toggleMobileMenu = () => {
+        setIsMobileMenuOpen(!isMobileMenuOpen);
+    };
+
+    const closeMobileMenu = () => {
+        setIsMobileMenuOpen(false);
+    };
+
+    return (
+        <header className="header">
+            <div className="container nav">
+                <a href="#home" className="nav-logo" onClick={closeMobileMenu}>BrowLovers</a>
+                <nav className={`nav-menu ${isMobileMenuOpen ? 'nav-menu-open' : ''}`}>
+                    <ul className="nav-links">
+                        <li><a href="#services" className="nav-link" onClick={closeMobileMenu}>Servicios</a></li>
+                        <li><a href="#about" className="nav-link" onClick={closeMobileMenu}>Nosotras</a></li>
+                        <li><a href="#gallery" className="nav-link" onClick={closeMobileMenu}>Galería</a></li>
+                        <li><a href="#booking" className="nav-link" onClick={closeMobileMenu}>Reserva</a></li>
+                        <li><a href="#contact" className="nav-link" onClick={closeMobileMenu}>Contacto</a></li>
+                    </ul>
+                </nav>
+                <button 
+                    className={`nav-toggle ${isMobileMenuOpen ? 'nav-toggle-open' : ''}`} 
+                    onClick={toggleMobileMenu}
+                    aria-label="Menu"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </header>
+    );
+};
 
 const Hero = () => (
     <section id="home" className="hero">
@@ -1161,6 +1182,57 @@ const Gallery = () => (
     </section>
 );
 
+// About Section Component
+const About = () => (
+    <section id="about" className="section about-section">
+        <div className="container">
+            <div className="about-content">
+                <div className="about-text">
+                    <h2 className="section-title">Sobre BrowLovers</h2>
+                    <p className="section-subtitle">
+                        Especialistas en belleza de mirada con más de 5 años de experiencia transformando la confianza de nuestras clientas
+                    </p>
+                    <div className="about-description">
+                        <p>
+                            En BrowLovers, creemos que cada mujer merece sentirse radiante y confiada. Nuestro equipo de especialistas certificadas 
+                            combina técnicas profesionales con productos de la más alta calidad para crear resultados naturales y duraderos.
+                        </p>
+                        <p>
+                            Desde nuestro estudio en Cancún, hemos transformado la mirada de más de 500 clientas, ayudándolas a descubrir 
+                            su belleza natural con servicios personalizados de cejas y pestañas.
+                        </p>
+                    </div>
+                    <div className="about-stats">
+                        <div className="stat-item">
+                            <div className="stat-number">500+</div>
+                            <div className="stat-label">Clientas Satisfechas</div>
+                        </div>
+                        <div className="stat-item">
+                            <div className="stat-number">5+</div>
+                            <div className="stat-label">Años de Experiencia</div>
+                        </div>
+                        <div className="stat-item">
+                            <div className="stat-number">100%</div>
+                            <div className="stat-label">Materiales Premium</div>
+                        </div>
+                    </div>
+                </div>
+                <div className="about-image">
+                    <div className="image-container">
+                        <img src="https://images.unsplash.com/photo-1522337691883-c218aa163e77?q=80&w=600" alt="BrowLovers Studio" />
+                        <div className="image-overlay">
+                            <div className="overlay-content">
+                                <h3>Nuestro Estudio</h3>
+                                <p>Un espacio diseñado para tu comodidad y relajación</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+);
+
 const WhyUs = () => (
      <section id="why-us" className="section">
         <div className="container">
@@ -1253,7 +1325,6 @@ const FAQ = () => {
                 <div className="faq-container">
                     {faqData.map((item, index) => (
                         <FaqItem
-                            // FIX: Using a stable key `item.q` instead of `index`.
                             key={item.q}
                             item={item} 
                             index={index} 
@@ -1386,7 +1457,7 @@ const Footer = () => (
 
 
 
-// New sections for enhanced homepage
+// Enhanced Testimonials Section
 const Testimonials = () => {
     const testimonials = [
         {
@@ -1394,24 +1465,60 @@ const Testimonials = () => {
             name: "María González",
             service: "Laminado de Cejas",
             rating: 5,
-            text: "Increíble experiencia! Mis cejas se ven perfectas y el servicio es de primera calidad. Definitivamente regresaré.",
-            image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?q=80&w=150"
+            text: "Increíble experiencia! Mis cejas se ven perfectas y el servicio es de primera calidad. El ambiente es súper relajante y las especialistas son muy profesionales. Definitivamente regresaré.",
+            image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?q=80&w=200",
+            date: "Hace 2 semanas",
+            verified: true
         },
         {
             id: 2,
             name: "Ana Rodríguez",
             service: "Extensiones Clásicas",
             rating: 5,
-            text: "Las extensiones quedaron hermosas y naturales. El personal es muy profesional y el lugar súper limpio.",
-            image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=150"
+            text: "Las extensiones quedaron hermosas y naturales. El personal es muy profesional y el lugar súper limpio. Me encanta cómo se ven mis pestañas, se ven completamente naturales pero con mucho más volumen.",
+            image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200",
+            date: "Hace 1 mes",
+            verified: true
         },
         {
             id: 3,
             name: "Laura Martínez",
             service: "Lash Lift",
             rating: 5,
-            text: "Mi mirada se ve completamente diferente! El Lash Lift es perfecto para mi rutina diaria. 100% recomendado.",
-            image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=150"
+            text: "Mi mirada se ve completamente diferente! El Lash Lift es perfecto para mi rutina diaria. No necesito rímel y mis pestañas se ven increíbles. 100% recomendado.",
+            image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200",
+            date: "Hace 3 semanas",
+            verified: true
+        },
+        {
+            id: 4,
+            name: "Carmen Silva",
+            service: "Pack Completo",
+            rating: 5,
+            text: "El pack completo fue la mejor decisión. Cejas y pestañas perfectas en una sola sesión. El ahorro es increíble y la calidad del servicio es excepcional. Ya soy cliente frecuente!",
+            image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200",
+            date: "Hace 1 semana",
+            verified: true
+        },
+        {
+            id: 5,
+            name: "Isabella Torres",
+            service: "Diseño de Cejas",
+            rating: 5,
+            text: "Por fin encontré el lugar perfecto para mis cejas. El diseño es exactamente lo que quería y la duración es increíble. El estudio es hermoso y muy acogedor.",
+            image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?q=80&w=200",
+            date: "Hace 2 meses",
+            verified: true
+        },
+        {
+            id: 6,
+            name: "Valentina Cruz",
+            service: "Extensiones Híbridas",
+            rating: 5,
+            text: "Las extensiones híbridas son perfectas para mi estilo. Se ven naturales pero con el drama que quería. El proceso fue muy cómodo y el resultado superó mis expectativas.",
+            image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200",
+            date: "Hace 5 días",
+            verified: true
         }
     ];
 
@@ -1419,22 +1526,35 @@ const Testimonials = () => {
         <section id="testimonials" className="section testimonials-section">
             <div className="container">
                 <h2 className="section-title">Lo que dicen nuestras clientas</h2>
+                <p className="section-subtitle">
+                    Más de 500 clientas satisfechas confían en nosotros para realzar su belleza natural
+                </p>
                 <div className="testimonials-grid">
                     {testimonials.map(testimonial => (
                         <div key={testimonial.id} className="testimonial-card">
                             <div className="testimonial-header">
-                                <img src={testimonial.image} alt={testimonial.name} className="testimonial-avatar" />
+                                <div className="testimonial-avatar-container">
+                                    <img src={testimonial.image} alt={testimonial.name} className="testimonial-avatar" />
+                                    {testimonial.verified && (
+                                        <div className="verified-badge">
+                                            <Icon path="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                        </div>
+                                    )}
+                                </div>
                                 <div className="testimonial-info">
-                                    <h4>{testimonial.name}</h4>
-                                    <p>{testimonial.service}</p>
+                                    <h4 className="testimonial-name">{testimonial.name}</h4>
+                                    <p className="testimonial-service">{testimonial.service}</p>
                                     <div className="testimonial-rating">
                                         {[...Array(testimonial.rating)].map((_, i) => (
                                             <Icon key={i} path="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
                                         ))}
                                     </div>
+                                    <span className="testimonial-date">{testimonial.date}</span>
                                 </div>
                             </div>
-                            <p className="testimonial-text">"{testimonial.text}"</p>
+                            <div className="testimonial-content">
+                                <p className="testimonial-text">"{testimonial.text}"</p>
+                            </div>
                         </div>
                     ))}
                 </div>
@@ -1444,6 +1564,28 @@ const Testimonials = () => {
 };
 
 
+// WhatsApp Integration Component
+const WhatsAppButton = () => {
+    const phoneNumber = "529981234567";
+    const message = "Hola! Me interesa agendar una cita en BrowLovers. ¿Podrían ayudarme?";
+    
+    const handleWhatsAppClick = () => {
+        const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+        window.open(url, '_blank');
+    };
+
+    return (
+        <button 
+            className="whatsapp-button"
+            onClick={handleWhatsAppClick}
+            aria-label="Contactar por WhatsApp"
+        >
+            <Icon path="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488" />
+            <span>WhatsApp</span>
+        </button>
+    );
+};
+
 const Promotions = () => {
     const promotions = [
         {
@@ -1451,21 +1593,27 @@ const Promotions = () => {
             title: "Primera Vez",
             description: "20% de descuento en tu primer servicio",
             code: "BIENVENIDA20",
-            validUntil: "31 Dic 2024"
+            validUntil: "31 Dic 2024",
+            discount: "20%",
+            color: "primary"
         },
         {
             id: 2,
             title: "Pack Mirada Perfecta",
             description: "Lash Lift + Laminado con 15% OFF",
             code: "MIRADA15",
-            validUntil: "31 Dic 2024"
+            validUntil: "31 Dic 2024",
+            discount: "15%",
+            color: "secondary"
         },
         {
             id: 3,
             title: "Amigas",
             description: "Trae a una amiga y ambas obtienen 10% OFF",
             code: "AMIGAS10",
-            validUntil: "31 Dic 2024"
+            validUntil: "31 Dic 2024",
+            discount: "10%",
+            color: "accent"
         }
     ];
 
@@ -1473,17 +1621,25 @@ const Promotions = () => {
         <section id="promotions" className="section promotions-section">
             <div className="container">
                 <h2 className="section-title">Promociones Especiales</h2>
+                <p className="section-subtitle">
+                    Aprovecha nuestras ofertas exclusivas y transforma tu mirada con descuentos especiales
+                </p>
                 <div className="promotions-grid">
                     {promotions.map(promo => (
-                        <div key={promo.id} className="promotion-card">
-                            <div className="promo-badge">Oferta</div>
-                            <h3>{promo.title}</h3>
-                            <p>{promo.description}</p>
-                            <div className="promo-code">
-                                <span>Código: {promo.code}</span>
-                            </div>
-                            <div className="promo-valid">
-                                <small>Válido hasta: {promo.validUntil}</small>
+                        <div key={promo.id} className={`promotion-card ${promo.color}`}>
+                            <div className="promo-badge">{promo.discount} OFF</div>
+                            <div className="promo-content">
+                                <h3>{promo.title}</h3>
+                                <p>{promo.description}</p>
+                                <div className="promo-code">
+                                    <span>Código: {promo.code}</span>
+                                </div>
+                                <div className="promo-valid">
+                                    <small>Válido hasta: {promo.validUntil}</small>
+                                </div>
+                                <button className="btn btn-primary promo-btn">
+                                    Aplicar Descuento
+                                </button>
                             </div>
                         </div>
                     ))}
@@ -1608,6 +1764,9 @@ const App = () => {
             <Stats />
             <TrustBadges />
             <Services onServiceClick={handleServiceClick} />
+            <About />
+            <Testimonials />
+            <Promotions />
             <Video />
             <Prices />
             <Gallery />
@@ -1617,6 +1776,7 @@ const App = () => {
             <Contact />
         </main>
         <Footer />
+        <WhatsAppButton />
         <ServiceModal 
             service={selectedService} 
             isOpen={isModalOpen} 

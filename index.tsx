@@ -13,37 +13,46 @@ const Icon = ({ path, className = '', ...props }) => (
 const servicesData = [
     { 
         id: 'eyebrows', 
-        name: 'Cejas', 
-        description: 'Diseño, laminado, y más para unas cejas perfectas.', 
+        name: '✨ Cejas Perfectas', 
+        description: 'Transforma tu mirada con cejas que realzan tu belleza natural. Técnicas profesionales que duran hasta 6 semanas.', 
         price: 'Desde $450', 
         duration: '45-60 min', 
         category: 'eyebrows',
-        items: ['Diseño de Cejas', 'Laminado de Cejas', 'Tinte de Cejas'],
+        items: ['Diseño Personalizado', 'Laminado Premium', 'Tinte Profesional'],
         image: 'https://images.unsplash.com/photo-1599334543470-490a6b64e0a4?q=80&w=800',
-        popular: true
+        popular: true,
+        benefits: ['Resultados naturales', 'Duración hasta 6 semanas', 'Técnicas certificadas'],
+        testimonial: '"Mis cejas nunca se vieron tan perfectas" - María',
+        icon: 'M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z'
     },
     { 
         id: 'lashes', 
-        name: 'Pestañas', 
-        description: 'Lifting, extensiones y todo para una mirada de impacto.', 
+        name: '👁️ Mirada de Impacto', 
+        description: 'Despierta cada mañana con pestañas perfectas. Lifting y extensiones que transforman tu mirada completamente.', 
         price: 'Desde $600', 
         duration: '60-120 min', 
         category: 'lashes',
-        items: ['Lash Lift', 'Extensiones Clásicas', 'Extensiones Híbridas'],
+        items: ['Lash Lift Premium', 'Extensiones Clásicas', 'Extensiones Híbridas'],
         image: 'https://images.unsplash.com/photo-1616474249339-99464b7b251a?q=80&w=800',
-        popular: true
+        popular: true,
+        benefits: ['Efecto despierta', 'Duración hasta 8 semanas', 'Materiales premium'],
+        testimonial: '"Me siento como una diosa cada día" - Ana',
+        icon: 'M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z'
     },
     { 
         id: 'packages', 
-        name: 'Packs & Promos', 
-        description: 'Combina tus servicios favoritos y ahorra hasta un 20%.', 
+        name: '💎 Pack Completo', 
+        description: 'La experiencia definitiva de belleza. Combina todos nuestros servicios premium y ahorra hasta $500.', 
         price: 'Desde $1200', 
         duration: '120-180 min', 
         category: 'packages',
-        items: ['Lash Lift + Laminado', 'Pack Mirada Perfecta', 'Pack Completo'],
+        items: ['Cejas + Pestañas', 'Pack Mirada Perfecta', 'Pack VIP Completo'],
         image: 'https://images.unsplash.com/photo-1522337691883-c218aa163e77?q=80&w=800',
         popular: false,
-        discount: '20% OFF'
+        discount: '20% OFF',
+        benefits: ['Ahorro garantizado', 'Experiencia VIP', 'Resultados espectaculares'],
+        testimonial: '"La mejor inversión en mi belleza" - Carmen',
+        icon: 'M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z'
     },
 ];
 
@@ -988,27 +997,78 @@ const Hero = () => (
 );
 
 const Services = ({ onServiceClick }) => (
-    <section id="services" className="section">
+    <section id="services" className="section services-section">
         <div className="container">
-            <h2 className="section-title">Nuestros Servicios</h2>
+            <div className="services-header">
+                <h2 className="section-title">✨ Nuestros Servicios</h2>
+                <p className="section-subtitle">
+                    Transformamos tu belleza natural con técnicas profesionales que te harán sentir radiante cada día
+                </p>
+            </div>
+            
             <div className="services-grid">
                 {servicesData.map(service => (
-                    <div key={service.id} className="service-card">
-                        <h3>{service.name}</h3>
-                        <p>{service.description}</p>
-                        <p><strong>{service.duration} | {service.price}</strong></p>
+                    <div key={service.id} className={`service-card ${service.popular ? 'popular' : ''}`}>
+                        {service.popular && (
+                            <div className="popular-badge">
+                                <Icon path="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" className="star-icon" />
+                                Más Popular
+                            </div>
+                        )}
+                        
+                        <div className="service-icon">
+                            <Icon path={service.icon} className="service-icon-svg" />
+                        </div>
+                        
+                        <h3 className="service-name">{service.name}</h3>
+                        <p className="service-description">{service.description}</p>
+                        
+                        <div className="service-benefits">
+                            {service.benefits.map((benefit, index) => (
+                                <div key={index} className="benefit-item">
+                                    <Icon path="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" className="check-icon" />
+                                    <span>{benefit}</span>
+                                </div>
+                            ))}
+                        </div>
+                        
+                        <div className="service-testimonial">
+                            <p>"{service.testimonial}"</p>
+                        </div>
+                        
+                        <div className="service-pricing">
+                            <div className="price-info">
+                                <span className="price">{service.price}</span>
+                                <span className="duration">{service.duration}</span>
+                            </div>
+                            {service.discount && (
+                                <div className="discount-badge">{service.discount}</div>
+                            )}
+                        </div>
+                        
                         <div className="service-actions">
                             <button 
                                 className="btn btn-secondary" 
                                 onClick={() => onServiceClick(service)}
-                                style={{marginRight: '0.5rem'}}
                             >
-                                Ver más
+                                Ver Detalles
                             </button>
-                            <a href="#booking" className="btn btn-primary">Reservar</a>
+                            <a href="#booking" className="btn btn-primary">
+                                Reservar Ahora
+                            </a>
                         </div>
                     </div>
                 ))}
+            </div>
+            
+            <div className="services-cta">
+                <div className="cta-content">
+                    <h3>¿Lista para transformar tu belleza?</h3>
+                    <p>Reserva tu cita hoy y descubre por qué miles de mujeres confían en nosotros</p>
+                    <a href="#booking" className="btn btn-primary btn-large">
+                        Reservar Mi Cita
+                    </a>
+                </div>
             </div>
         </div>
     </section>

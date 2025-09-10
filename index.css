@@ -576,15 +576,17 @@ body {
   font-family: 'Playfair Display', serif;
   font-size: 1.4rem;
   font-weight: 600;
-  color: white;
+  color: var(--text-dark);
   margin-bottom: 0.3rem;
+  text-shadow: 0 2px 4px rgba(255, 255, 255, 0.8);
 }
 
 .video-overlay-subtitle {
   font-family: 'Cormorant Garamond', serif;
   font-size: 0.9rem;
   font-style: italic;
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--text-light);
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
 }
 
 /* Video Section Responsive */
@@ -814,10 +816,41 @@ body {
     flex-direction: column;
   }
 }
+/* Enhanced Services Section */
+.services-section {
+  background: linear-gradient(135deg, var(--warm-beige) 0%, var(--light-mauve) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.services-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 20% 30%, rgba(232, 180, 184, 0.1) 2px, transparent 2px),
+    radial-gradient(circle at 80% 70%, rgba(212, 175, 140, 0.1) 1.5px, transparent 1.5px);
+  background-size: 100px 100px, 80px 80px;
+  animation: sparkle 6s ease-in-out infinite alternate;
+}
+
+.services-header {
+  text-align: center;
+  margin-bottom: 4rem;
+  position: relative;
+  z-index: 1;
+}
+
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2.5rem;
+  margin-bottom: 4rem;
+  position: relative;
+  z-index: 1;
 }
 
 .service-card {
@@ -830,6 +863,184 @@ body {
   border: 1px solid rgba(232, 180, 184, 0.1);
   position: relative;
   overflow: hidden;
+}
+
+.service-card.popular {
+  border: 2px solid var(--primary-pink);
+  box-shadow: var(--shadow);
+  transform: scale(1.02);
+}
+
+.popular-badge {
+  position: absolute;
+  top: -1px;
+  right: 20px;
+  background: linear-gradient(135deg, var(--primary-pink), var(--rose-gold));
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0 0 1rem 1rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  z-index: 2;
+}
+
+.star-icon {
+  width: 14px;
+  height: 14px;
+}
+
+.service-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, var(--primary-pink), var(--rose-gold));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  box-shadow: var(--shadow-soft);
+}
+
+.service-icon-svg {
+  width: 28px;
+  height: 28px;
+  color: white;
+}
+
+.service-name {
+  font-size: 1.5rem;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+  font-family: var(--font-elegant);
+  letter-spacing: 0.3px;
+}
+
+.service-description {
+  color: var(--text-light);
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+.service-benefits {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+.check-icon {
+  width: 16px;
+  height: 16px;
+  color: var(--primary-pink);
+  flex-shrink: 0;
+}
+
+.service-testimonial {
+  background: var(--warm-beige);
+  padding: 1rem;
+  border-radius: 0.75rem;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid var(--primary-pink);
+}
+
+.service-testimonial p {
+  font-style: italic;
+  color: var(--text-dark);
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.service-pricing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: var(--light-mauve);
+  border-radius: 0.75rem;
+}
+
+.price-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-pink);
+  font-family: var(--font-elegant);
+}
+
+.duration {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  font-weight: 500;
+}
+
+.discount-badge {
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  box-shadow: var(--shadow-soft);
+}
+
+.services-cta {
+  background: linear-gradient(135deg, var(--primary-pink), var(--dusty-rose));
+  border-radius: var(--border-radius-lg);
+  padding: 3rem 2rem;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  box-shadow: var(--shadow);
+}
+
+.cta-content h3 {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 1rem;
+  font-family: var(--font-elegant);
+}
+
+.cta-content p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-large {
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background: white;
+  color: var(--primary-pink);
+  border: none;
+  box-shadow: var(--shadow);
+}
+
+.btn-large:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+  background: var(--warm-beige);
 }
 
 .service-card::before {
@@ -1251,8 +1462,8 @@ body {
 }
 
 .modal-close:hover {
-  color: white;
-  margin-bottom: 1.5rem;
+  color: var(--primary-pink);
+  background-color: var(--warm-beige);
 }
 
 .product-details {
@@ -1276,9 +1487,10 @@ body {
 }
 
 .product-info h2 {
-  color: white;
-  margin-bottom: 1.5rem;
+  color: var(--text-dark);
   margin-bottom: 1rem;
+  font-family: var(--font-elegant);
+  font-size: 1.75rem;
 }
 
 .product-description {
@@ -1302,7 +1514,7 @@ body {
 .price {
   font-size: 1.5rem;
   font-weight: 700;
-  color: white;
+  color: var(--primary-pink);
   margin-bottom: 1.5rem;
 }
 
@@ -1318,9 +1530,10 @@ body {
 }
 
 .includes-section h4, .addons-section h4 {
-  color: white;
-  margin-bottom: 1.5rem;
+  color: var(--text-dark);
   margin-bottom: 0.5rem;
+  font-family: var(--font-elegant);
+  font-size: 1.25rem;
 }
 
 .includes-section ul {
@@ -1337,8 +1550,7 @@ body {
 
 .includes-section li:before {
   content: "✓";
-  color: white;
-  margin-bottom: 1.5rem;
+  color: var(--primary-pink);
   font-weight: bold;
   margin-right: 0.5rem;
 }
@@ -1378,7 +1590,7 @@ body {
 }
 
 .quantity-controls button {
-  background: none;
+  background: var(--primary-pink);
   border: none;
   width: 30px;
   height: 30px;
@@ -1389,7 +1601,12 @@ body {
   justify-content: center;
   font-weight: bold;
   color: white;
-  margin-bottom: 1.5rem;
+  transition: all 0.2s ease;
+}
+
+.quantity-controls button:hover {
+  background: var(--dusty-rose);
+  transform: scale(1.1);
 }
 
 .quantity-controls button:hover {
@@ -1405,9 +1622,10 @@ body {
 }
 
 .total-section h3 {
-  color: white;
-  margin-bottom: 1.5rem;
+  color: var(--text-dark);
   margin-bottom: 0.5rem;
+  font-family: var(--font-elegant);
+  font-size: 1.5rem;
 }
 
 .modal-actions {
@@ -1440,9 +1658,10 @@ body {
 }
 
 .cart-header h2 {
-  color: white;
-  margin-bottom: 1.5rem;
+  color: var(--text-dark);
   margin: 0;
+  font-family: var(--font-elegant);
+  font-size: 1.75rem;
 }
 
 .cart-items {
@@ -1462,9 +1681,10 @@ body {
 }
 
 .item-info h4 {
-  color: white;
-  margin-bottom: 1.5rem;
+  color: var(--text-dark);
   margin-bottom: 0.5rem;
+  font-family: var(--font-elegant);
+  font-size: 1.1rem;
 }
 
 .item-info p {
@@ -1482,12 +1702,12 @@ body {
 }
 
 .addon-tag {
-  background: var(--blush-pink-light);
+  background: var(--primary-pink);
   color: white;
-  margin-bottom: 1.5rem;
   padding: 0.25rem 0.5rem;
   border-radius: 0.5rem;
   font-size: 0.75rem;
+  font-weight: 500;
 }
 
 .item-actions {
@@ -1499,8 +1719,8 @@ body {
 
 .item-total {
   font-weight: 600;
-  color: white;
-  margin-bottom: 1.5rem;
+  color: var(--text-dark);
+  font-size: 1.1rem;
 }
 
 .remove-btn {
@@ -1530,9 +1750,10 @@ body {
 }
 
 .cart-total h3 {
-  color: white;
-  margin-bottom: 1.5rem;
+  color: var(--text-dark);
   margin-bottom: 0.5rem;
+  font-family: var(--font-elegant);
+  font-size: 1.5rem;
 }
 
 .cart-actions {
@@ -1590,10 +1811,10 @@ body {
 }
 
 .testimonial-info h4 {
-    color: white;
-  margin-bottom: 1.5rem;
+    color: var(--text-dark);
     margin-bottom: 0.25rem;
     font-size: 1.1rem;
+    font-family: var(--font-elegant);
 }
 
 .testimonial-info p {
@@ -1657,10 +1878,10 @@ body {
 }
 
 .process-step h3 {
-    color: white;
-  margin-bottom: 1.5rem;
+    color: var(--text-dark);
     margin-bottom: 1rem;
     font-size: 1.5rem;
+    font-family: var(--font-elegant);
 }
 
 .process-step p {
@@ -1716,10 +1937,10 @@ body {
 }
 
 .promotion-card h3 {
-    color: white;
-  margin-bottom: 1.5rem;
+    color: var(--text-dark);
     margin-bottom: 1rem;
     font-size: 1.5rem;
+    font-family: var(--font-elegant);
 }
 
 .promotion-card p {
@@ -1739,8 +1960,7 @@ body {
 }
 
 .promo-code span {
-    color: white;
-  margin-bottom: 1.5rem;
+    color: var(--text-dark);
     font-weight: 600;
     font-size: 1.1rem;
 }

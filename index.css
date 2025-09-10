@@ -126,11 +126,6 @@ body {
   color: white;
   text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px);
-  padding: 1.5rem 2rem;
-  border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.3);
   text-decoration: none;
 }
 
@@ -170,11 +165,6 @@ body {
   color: white;
   text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px);
-  padding: 1.5rem 2rem;
-  border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.3);
   cursor: pointer;
   padding: 0.5rem;
   border-radius: 50%;
@@ -264,11 +254,6 @@ body {
   color: white;
   text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px);
-  padding: 1.5rem 2rem;
-  border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .hero-content p {
@@ -321,11 +306,6 @@ body {
   color: white;
   text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px);
-  padding: 1.5rem 2rem;
-  border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .hero-content p {
@@ -364,18 +344,12 @@ body {
   color: white;
   text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px);
-  padding: 1.5rem 2rem;
-  border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .feature-item span {
   font-weight: 600;
-  color: var(--dark-gray);
-  margin-bottom: 2.5rem;
-  font-weight: 400;
+  color: white;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
 }
 
 
@@ -868,11 +842,6 @@ body {
     color: white;
   text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px);
-  padding: 1.5rem 2rem;
-  border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.3);
     font-weight: 600;
 }
 .prices-policies {
@@ -887,11 +856,6 @@ body {
     color: white;
   text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px);
-  padding: 1.5rem 2rem;
-  border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.3);
     margin-bottom: 1rem;
 }
 .prices-policies ul {
@@ -957,11 +921,6 @@ body {
     color: white;
   text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px);
-  padding: 1.5rem 2rem;
-  border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.3);
     margin-bottom: 1rem;
     text-align: center;
 }
@@ -1005,11 +964,6 @@ body {
     color: white;
   text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px);
-  padding: 1.5rem 2rem;
-  border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.3);
     padding: 1rem;
     border-radius: var(--border-radius);
     text-align: center;
@@ -1091,11 +1045,6 @@ body {
     color: white;
   text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px);
-  padding: 1.5rem 2rem;
-  border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.3);
     margin-bottom: 1rem;
 }
 .contact-info p {
@@ -1110,11 +1059,6 @@ body {
     color: white;
   text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px);
-  padding: 1.5rem 2rem;
-  border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .contact-map {
     flex: 1.5;
@@ -1256,11 +1200,6 @@ body {
   color: white;
   text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px);
-  padding: 1.5rem 2rem;
-  border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .product-details {
@@ -1287,11 +1226,6 @@ body {
   color: white;
   text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px);
-  padding: 1.5rem 2rem;
-  border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.3);
   margin-bottom: 1rem;
 }
 
@@ -1319,11 +1253,6 @@ body {
   color: white;
   text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px);
-  padding: 1.5rem 2rem;
-  border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .duration {
@@ -1341,11 +1270,6 @@ body {
   color: white;
   text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px);
-  padding: 1.5rem 2rem;
-  border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.3);
   margin-bottom: 0.5rem;
 }
 
@@ -1366,11 +1290,6 @@ body {
   color: white;
   text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px);
-  padding: 1.5rem 2rem;
-  border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.3);
   font-weight: bold;
   margin-right: 0.5rem;
 }
@@ -1423,11 +1342,6 @@ body {
   color: white;
   text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px);
-  padding: 1.5rem 2rem;
-  border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .quantity-controls button:hover {
@@ -1446,11 +1360,6 @@ body {
   color: white;
   text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px);
-  padding: 1.5rem 2rem;
-  border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.3);
   margin-bottom: 0.5rem;
 }
 
@@ -1487,11 +1396,6 @@ body {
   color: white;
   text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px);
-  padding: 1.5rem 2rem;
-  border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.3);
   margin: 0;
 }
 
@@ -1515,11 +1419,6 @@ body {
   color: white;
   text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px);
-  padding: 1.5rem 2rem;
-  border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.3);
   margin-bottom: 0.5rem;
 }
 
@@ -1542,11 +1441,6 @@ body {
   color: white;
   text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px);
-  padding: 1.5rem 2rem;
-  border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.3);
   padding: 0.25rem 0.5rem;
   border-radius: 0.5rem;
   font-size: 0.75rem;
@@ -1564,11 +1458,6 @@ body {
   color: white;
   text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px);
-  padding: 1.5rem 2rem;
-  border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .remove-btn {
@@ -1601,11 +1490,6 @@ body {
   color: white;
   text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px);
-  padding: 1.5rem 2rem;
-  border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.3);
   margin-bottom: 0.5rem;
 }
 
@@ -1667,11 +1551,6 @@ body {
     color: white;
   text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px);
-  padding: 1.5rem 2rem;
-  border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.3);
     margin-bottom: 0.25rem;
     font-size: 1.1rem;
 }
@@ -1740,11 +1619,6 @@ body {
     color: white;
   text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px);
-  padding: 1.5rem 2rem;
-  border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.3);
     margin-bottom: 1rem;
     font-size: 1.5rem;
 }
@@ -1805,11 +1679,6 @@ body {
     color: white;
   text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px);
-  padding: 1.5rem 2rem;
-  border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.3);
     margin-bottom: 1rem;
     font-size: 1.5rem;
 }
@@ -1834,11 +1703,6 @@ body {
     color: white;
   text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px);
-  padding: 1.5rem 2rem;
-  border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.3);
     font-weight: 600;
     font-size: 1.1rem;
 }
@@ -1911,11 +1775,6 @@ body {
         color: white;
   text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px);
-  padding: 1.5rem 2rem;
-  border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.3);
         font-size: 2rem;
     }
 

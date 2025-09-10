@@ -971,25 +971,80 @@ const Hero = () => (
     <section id="home" className="hero">
         <div className="container">
             <div className="hero-content">
-            <h1>Mira y siéntete impecable todos los días</h1>
-            <p>Especialistas en cejas, laminado, lash lift y extensiones con resultados naturales que realzan tu belleza.</p>
-            <div className="hero-buttons">
-                <a href="#booking" className="btn btn-primary">Reservar ahora</a>
-                    <a href="#services" className="btn btn-secondary">Ver precios</a>
-            </div>
-            <div className="hero-features">
-                <div className="feature-item">
-                    <Icon path="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    <span>Calidad Premium</span>
-                </div>
-                <div className="feature-item">
-                     <Icon path="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
-                    <span>Técnicas Seguras</span>
-                </div>
-                <div className="feature-item">
-                     <Icon path="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0l-.07.002-.018.002-.006.001-.004.001-.001.001A49.954 49.954 0 0012 15.25a49.954 49.954 0 008.232-5.102l-.001-.001-.004-.001-.006-.001-.018-.002-.07-.002z" />
-                    <span>Cuidado Personalizado</span>
+                <div className="hero-badge">Belleza de mirada</div>
+                <h1>Extensiones & Lifting de pestañas con acabado de lujo</h1>
+                <p>Somos especialistas en crear nuevas miradas. Reserva con 30% de anticipo, trabajamos con materiales premium y ofrecemos garantía de 48 horas.</p>
+                <div className="hero-features">
+                    <div className="feature-item">
+                        <Icon path="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" className="feature-icon" />
+                        <span>Materiales Premium</span>
                     </div>
+                    <div className="feature-item">
+                        <Icon path="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" className="feature-icon" />
+                        <span>Garantía 48h</span>
+                    </div>
+                    <div className="feature-item">
+                        <Icon path="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" className="feature-icon" />
+                        <span>Diseño Personalizado</span>
+                    </div>
+                </div>
+                <div className="hero-actions">
+                    <a href="#booking" className="btn btn-primary">Reservar Ahora</a>
+                    <a href="#services" className="btn btn-secondary">Ver Servicios</a>
+                </div>
+            </div>
+        </div>
+    </section>
+);
+
+const Stats = () => (
+    <section className="stats-section">
+        <div className="container">
+            <div className="stats-grid">
+                <div className="stat-item">
+                    <div className="stat-number">500+</div>
+                    <div className="stat-label">Clientas satisfechas</div>
+                </div>
+                <div className="stat-item">
+                    <div className="stat-number">3+</div>
+                    <div className="stat-label">Años de experiencia</div>
+                </div>
+                <div className="stat-item">
+                    <div className="stat-number">100%</div>
+                    <div className="stat-label">Garantía de calidad</div>
+                </div>
+            </div>
+        </div>
+    </section>
+);
+
+const Process = () => (
+    <section className="process-section">
+        <div className="container">
+            <div className="process-header">
+                <h2 className="section-title">Cómo funciona</h2>
+                <p className="section-subtitle">Un proceso simple y elegante para tu experiencia de belleza perfecta.</p>
+            </div>
+            <div className="process-steps">
+                <div className="process-step">
+                    <div className="step-number">1</div>
+                    <h3>Reserva tu cita</h3>
+                    <p>Elige tu servicio favorito y selecciona el horario que mejor te convenga.</p>
+                </div>
+                <div className="process-step">
+                    <div className="step-number">2</div>
+                    <h3>Paga tu depósito</h3>
+                    <p>Aparta tu cita con solo el 30% del costo total de manera segura.</p>
+                </div>
+                <div className="process-step">
+                    <div className="step-number">3</div>
+                    <h3>Disfruta tu servicio</h3>
+                    <p>Relájate mientras nuestras expertas trabajan su magia en ti.</p>
+                </div>
+                <div className="process-step">
+                    <div className="step-number">4</div>
+                    <h3>Paga el saldo</h3>
+                    <p>Completa tu pago al finalizar el servicio y disfruta tu nuevo look.</p>
                 </div>
             </div>
         </div>
@@ -1398,42 +1453,6 @@ const Testimonials = () => {
     );
 };
 
-const Process = () => {
-    const steps = [
-        {
-            number: "01",
-            title: "Consulta",
-            description: "Analizamos tus necesidades y te asesoramos sobre el mejor tratamiento para ti."
-        },
-        {
-            number: "02", 
-            title: "Tratamiento",
-            description: "Aplicamos la técnica más adecuada con productos de la más alta calidad."
-        },
-        {
-            number: "03",
-            title: "Resultado",
-            description: "Disfruta de un look perfecto y recibe instrucciones para el mantenimiento."
-        }
-    ];
-
-    return (
-        <section id="process" className="section process-section">
-            <div className="container">
-                <h2 className="section-title">Nuestro Proceso</h2>
-                <div className="process-steps">
-                    {steps.map((step, index) => (
-                        <div key={index} className="process-step">
-                            <div className="step-number">{step.number}</div>
-                            <h3>{step.title}</h3>
-                            <p>{step.description}</p>
-                        </div>
-                    ))}
-                </div>
-            </div>
-        </section>
-    );
-};
 
 const Promotions = () => {
     const promotions = [
@@ -1596,7 +1615,9 @@ const App = () => {
         <Header />
         <main>
             <Hero />
+            <Stats />
             <Services onServiceClick={handleServiceClick} />
+            <Process />
             <Video />
             <Prices />
             <Gallery />

@@ -941,7 +941,7 @@ const FaqItem = ({ item, index, activeIndex, setActiveIndex }) => {
 
 
 // Main App Sections
-const Header = ({ cartCount, onCartClick }) => (
+const Header = () => (
     <header className="header">
         <div className="container nav">
             <a href="#home" className="nav-logo">BrowLovers</a>
@@ -953,95 +953,52 @@ const Header = ({ cartCount, onCartClick }) => (
                     <li><a href="#contact" className="nav-link">Contacto</a></li>
                 </ul>
             </nav>
-            <div className="nav-actions">
-                <button 
-                    className="cart-button" 
-                    onClick={onCartClick}
-                    aria-label="Ver carrito"
-                >
-                    <Icon path="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
-                    {cartCount > 0 && <span className="cart-count">{cartCount}</span>}
-                </button>
             <button className="nav-toggle" aria-label="Menu">&#9776;</button>
-            </div>
         </div>
     </header>
 );
 
 const Hero = () => (
     <section id="home" className="hero">
-        <div className="hero-bg-shape hero-bg-shape1"></div>
-        <div className="hero-bg-shape hero-bg-shape2"></div>
-        <div className="hero-video-overlay"></div>
-        <div className="container hero-content">
-            <div className="hero-text">
-                <h1>Mira y siéntete impecable todos los días</h1>
-                <p>Especialistas en cejas, laminado, lash lift y extensiones con resultados naturales que realzan tu belleza.</p>
-                <div className="hero-stats">
-                    <div className="stat-item">
-                        <span className="stat-number">500+</span>
-                        <span className="stat-label">Clientas Felices</span>
-                    </div>
-                    <div className="stat-item">
-                        <span className="stat-number">3+</span>
-                        <span className="stat-label">Años de Experiencia</span>
-                    </div>
-                    <div className="stat-item">
-                        <span className="stat-number">100%</span>
-                        <span className="stat-label">Satisfacción</span>
+        <div className="container">
+            <div className="hero-content">
+            <h1>Mira y siéntete impecable todos los días</h1>
+            <p>Especialistas en cejas, laminado, lash lift y extensiones con resultados naturales que realzan tu belleza.</p>
+            <div className="hero-buttons">
+                <a href="#booking" className="btn btn-primary">Reservar ahora</a>
+                    <a href="#services" className="btn btn-secondary">Ver precios</a>
+            </div>
+            <div className="hero-features">
+                <div className="feature-item">
+                    <Icon path="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    <span>Calidad Premium</span>
+                </div>
+                <div className="feature-item">
+                     <Icon path="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
+                    <span>Técnicas Seguras</span>
+                </div>
+                <div className="feature-item">
+                     <Icon path="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0l-.07.002-.018.002-.006.001-.004.001-.001.001A49.954 49.954 0 0012 15.25a49.954 49.954 0 008.232-5.102l-.001-.001-.004-.001-.006-.001-.018-.002-.07-.002z" />
+                    <span>Cuidado Personalizado</span>
                     </div>
                 </div>
-                <div className="hero-buttons">
-                    <a href="#booking" className="btn btn-primary">Reservar ahora</a>
-                    <a href="#services" className="btn btn-secondary">Ver servicios</a>
-                    <button className="btn btn-video" onClick={() => document.getElementById('hero-video').play()}>
-                        <Icon path="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
-                        Ver Video
-                    </button>
-                </div>
-            </div>
-            <div className="hero-video">
-                <video id="hero-video" className="hero-video-player" muted loop>
-                    <source src="/images/videos/hero-video.mp4" type="video/mp4" />
-                    <source src="/images/videos/hero-video.webm" type="video/webm" />
-                    Tu navegador no soporta videos.
-                </video>
-                <div className="video-placeholder">
-                    <div className="placeholder-content">
-                        <Icon path="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
-                        <p>Video de nuestros servicios</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div className="hero-features">
-            <div className="feature-item">
-                <Icon path="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                <span>Calidad Premium</span>
-            </div>
-            <div className="feature-item">
-                 <Icon path="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
-                <span>Técnicas Seguras</span>
-            </div>
-            <div className="feature-item">
-                 <Icon path="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0l-.07.002-.018.002-.006.001-.004.001-.001.001A49.954 49.954 0 0012 15.25a49.954 49.954 0 008.232-5.102l-.001-.001-.004-.001-.006-.001-.018-.002-.07-.002z" />
-                <span>Cuidado Personalizado</span>
             </div>
         </div>
     </section>
 );
 
-const Services = ({ onServiceClick }) => (
+const Services = () => (
     <section id="services" className="section">
         <div className="container">
             <h2 className="section-title">Nuestros Servicios</h2>
             <div className="services-grid">
                 {servicesData.map(service => (
-                    <ServiceCard 
-                        key={service.id} 
-                        service={service} 
-                        onBook={onServiceClick}
-                    />
+                    <div key={service.id} className="service-card">
+                        <h3>{service.name}</h3>
+                        <p>{service.description}</p>
+                        <p><strong>{service.duration} | {service.price}</strong></p>
+                        <a href="#booking" className="btn btn-primary" style={{marginTop: '1rem'}}>Reservar</a>
+                    </div>
                 ))}
             </div>
         </div>
@@ -1423,59 +1380,23 @@ const Promotions = () => {
 };
 
 const App = () => {
-    const { cart, isCartOpen, setIsCartOpen, addToCart, removeFromCart, clearCart } = useCart();
-    const [selectedService, setSelectedService] = useState(null);
-    const [isModalOpen, setIsModalOpen] = useState(false);
-
-    const handleServiceClick = (service) => {
-        setSelectedService(service);
-        setIsModalOpen(true);
-    };
-
-    const handleAddToCart = (service, addOns, quantity) => {
-        for (let i = 0; i < quantity; i++) {
-            addToCart(service, addOns);
-        }
-    };
-
     return (
-        <>
-            <Header cartCount={cart.length} onCartClick={() => setIsCartOpen(true)} />
-            <main>
-                <Hero />
-                <Services onServiceClick={handleServiceClick} />
-                <Process />
-                <Prices />
-                <Testimonials />
-                <Gallery />
-                <Promotions />
-                <WhyUs />
-                <Booking />
-                <FAQ />
-                <Contact />
-            </main>
-            <Footer />
-            <FloatingButtons />
-            
-            <ProductModal 
-                service={selectedService}
-                isOpen={isModalOpen}
-                onClose={() => {
-                    setIsModalOpen(false);
-                    setSelectedService(null);
-                }}
-                onAddToCart={handleAddToCart}
-            />
-            
-            <ShoppingCart 
-                cart={cart}
-                isOpen={isCartOpen}
-                onClose={() => setIsCartOpen(false)}
-                onRemoveItem={removeFromCart}
-                onClearCart={clearCart}
-            />
-        </>
-    );
+    <>
+        <Header />
+        <main>
+            <Hero />
+            <Services />
+            <Prices />
+            <Gallery />
+            <WhyUs />
+            <Booking />
+            <FAQ />
+            <Contact />
+        </main>
+        <Footer />
+        <FloatingButtons />
+    </>
+);
 };
 
 const container = document.getElementById('root');

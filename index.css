@@ -2,17 +2,18 @@
 /*  1. Global Styles   */
 /* ------------------- */
 :root {
-  --rose-gold: #a26866;
-  --blush-pink-light: #fde8e7;
-  --blush-pink-dark: #f8d3d1;
-  --cream-white: #faf7f5;
-  --light-gray: #f0f0f0;
-  --dark-gray: #555;
-  --text-dark: #333;
+  --soft-pink: #f8b5c1;
+  --rose-gold: #d4a574;
+  --lavender: #e6d7ff;
+  --peach: #ffd1dc;
+  --cream-white: #fefefe;
+  --light-gray: #f8f8f8;
+  --dark-gray: #6b5b73;
+  --text-dark: #4a4a4a;
   --font-family: 'Poppins', sans-serif;
-  --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.1);
-  --border-radius: 1rem; /* equivalent to rounded-2xl */
+  --shadow: 0 4px 20px rgba(248, 181, 193, 0.15);
+  --shadow-lg: 0 10px 30px rgba(248, 181, 193, 0.25);
+  --border-radius: 1.5rem;
 }
 
 *,
@@ -51,7 +52,10 @@ body {
 .section-title {
   text-align: center;
   font-size: 2.5rem;
-  color: var(--rose-gold);
+  background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   margin-bottom: 3rem;
   font-weight: 600;
 }
@@ -70,24 +74,28 @@ body {
 }
 
 .btn-primary {
-  background-color: var(--rose-gold);
+  background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
   color: white;
+  border: none;
+  box-shadow: 0 4px 15px rgba(248, 181, 193, 0.3);
 }
 
 .btn-primary:hover {
   transform: translateY(-3px);
-  box-shadow: var(--shadow-lg);
+  box-shadow: 0 8px 25px rgba(248, 181, 193, 0.4);
+  background: linear-gradient(135deg, var(--rose-gold), var(--soft-pink));
 }
 
 .btn-secondary {
   background-color: transparent;
-  color: var(--rose-gold);
-  border: 2px solid var(--rose-gold);
+  color: var(--soft-pink);
+  border: 2px solid var(--soft-pink);
 }
 
 .btn-secondary:hover {
-  background-color: var(--rose-gold);
+  background-color: var(--soft-pink);
   color: white;
+  transform: translateY(-2px);
 }
 
 /* ------------------- */
@@ -97,11 +105,12 @@ body {
   position: sticky;
   top: 0;
   width: 100%;
-  background-color: rgba(250, 247, 245, 0.9);
-  backdrop-filter: blur(10px);
+  background-color: rgba(254, 254, 254, 0.95);
+  backdrop-filter: blur(20px);
   z-index: 1000;
   padding: 1rem 0;
-  box-shadow: var(--shadow);
+  box-shadow: 0 2px 20px rgba(248, 181, 193, 0.1);
+  border-bottom: 1px solid rgba(248, 181, 193, 0.2);
 }
 
 .nav {
@@ -111,9 +120,12 @@ body {
 }
 
 .nav-logo {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 700;
-  color: var(--rose-gold);
+  background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   text-decoration: none;
 }
 
@@ -127,11 +139,15 @@ body {
   text-decoration: none;
   color: var(--dark-gray);
   font-weight: 600;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
 }
 
 .nav-link:hover {
-  color: var(--rose-gold);
+  color: var(--soft-pink);
+  background-color: rgba(248, 181, 193, 0.1);
+  transform: translateY(-2px);
 }
 
 .nav-actions {
@@ -144,7 +160,10 @@ body {
   position: relative;
   background: none;
   border: none;
-  color: var(--rose-gold);
+  background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   cursor: pointer;
   padding: 0.5rem;
   border-radius: 50%;
@@ -164,7 +183,10 @@ body {
   position: absolute;
   top: -5px;
   right: -5px;
-  background-color: var(--rose-gold);
+  background-background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   color: white;
   border-radius: 50%;
   width: 20px;
@@ -184,149 +206,42 @@ body {
 /*  4. Hero Section    */
 /* ------------------- */
 .hero {
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   align-items: center;
+  text-align: center;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, var(--blush-pink-light) 0%, #f8f3f2 100%);
+  background: linear-gradient(135deg, var(--peach) 0%, var(--lavender) 50%, var(--soft-pink) 100%);
 }
 
 .hero-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  align-items: center;
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 
-.hero-text {
-  text-align: left;
-}
-
-.hero-text h1 {
+.hero-content h1 {
   font-size: 3.5rem;
   font-weight: 700;
-  line-height: 1.1;
-  color: var(--rose-gold);
-  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
-.hero-text p {
-  font-size: 1.3rem;
-  margin-bottom: 2rem;
+.hero-content p {
+  font-size: 1.2rem;
+  margin: 1.5rem auto;
+  max-width: 600px;
   color: var(--dark-gray);
-  line-height: 1.6;
-}
-
-.hero-stats {
-  display: flex;
-  gap: 2rem;
-  margin: 2rem 0;
-}
-
-.stat-item {
-  text-align: center;
-}
-
-.stat-number {
-  display: block;
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: var(--rose-gold);
-  line-height: 1;
-}
-
-.stat-label {
-  font-size: 0.9rem;
-  color: var(--dark-gray);
-  font-weight: 600;
 }
 
 .hero-buttons {
   display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  margin-top: 2rem;
-}
-
-.btn-video {
-  background: linear-gradient(45deg, var(--rose-gold), #d4af37);
-  color: white;
-  border: none;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.8rem 1.5rem;
-  border-radius: var(--border-radius);
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.btn-video:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-lg);
-}
-
-.btn-video svg {
-  width: 20px;
-  height: 20px;
-}
-
-.hero-video {
-  position: relative;
-  border-radius: var(--border-radius);
-  overflow: hidden;
-  box-shadow: var(--shadow-lg);
-}
-
-.hero-video-player {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-  border-radius: var(--border-radius);
-}
-
-.video-placeholder {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(135deg, var(--rose-gold), #d4af37);
-  display: flex;
-  align-items: center;
   justify-content: center;
-  border-radius: var(--border-radius);
-}
-
-.placeholder-content {
-  text-align: center;
-  color: white;
-}
-
-.placeholder-content svg {
-  width: 60px;
-  height: 60px;
-  margin-bottom: 1rem;
-}
-
-.placeholder-content p {
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin: 0;
-}
-
-.hero-video-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(45deg, rgba(162, 104, 102, 0.1), rgba(248, 211, 209, 0.1));
-  z-index: 1;
+  gap: 1rem;
+  margin-top: 2rem;
 }
 
 .hero-bg-shape {
@@ -360,7 +275,10 @@ body {
   font-size: 3.5rem;
   font-weight: 700;
   line-height: 1.2;
-  color: var(--rose-gold);
+  background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .hero-content p {
@@ -394,7 +312,10 @@ body {
 .feature-item svg {
   width: 40px;
   height: 40px;
-  color: var(--rose-gold);
+  background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .feature-item span {
@@ -416,11 +337,9 @@ body {
   background: white;
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
-  padding: 0;
+  padding: 2rem;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  position: relative;
-  overflow: hidden;
 }
 
 .service-card:hover {
@@ -428,63 +347,18 @@ body {
   box-shadow: var(--shadow-lg);
 }
 
-.service-image {
-  width: 100%;
-  height: 200px;
-  overflow: hidden;
-}
-
-.service-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.service-card:hover .service-image img {
-  transform: scale(1.05);
-}
-
-.popular-badge {
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  background: linear-gradient(45deg, var(--rose-gold), #d4af37);
-  color: white;
-  padding: 0.25rem 0.75rem;
-  border-radius: 1rem;
-  font-size: 0.75rem;
-  font-weight: 600;
-  z-index: 1;
-}
-
-.discount-badge {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  background: #e74c3c;
-  color: white;
-  padding: 0.25rem 0.75rem;
-  border-radius: 1rem;
-  font-size: 0.75rem;
-  font-weight: 600;
-  z-index: 1;
-}
-
 .service-card h3 {
   font-size: 1.5rem;
-  color: var(--rose-gold);
-  margin: 1rem 1rem 0.5rem;
+  background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1rem;
 }
 
 .service-card p {
   color: var(--dark-gray);
-  margin: 0 1rem 1rem;
-  font-size: 0.9rem;
-}
-
-.service-actions {
-  padding: 0 1rem 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 /* ------------------- */
@@ -511,7 +385,10 @@ body {
 }
 .prices-table th {
     background-color: var(--blush-pink-light);
-    color: var(--rose-gold);
+    background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
     font-weight: 600;
 }
 .prices-policies {
@@ -523,7 +400,10 @@ body {
     box-shadow: var(--shadow);
 }
 .prices-policies h3 {
-    color: var(--rose-gold);
+    background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
     margin-bottom: 1rem;
 }
 .prices-policies ul {
@@ -586,7 +466,10 @@ body {
     min-width: 300px;
 }
 .booking-option h3 {
-    color: var(--rose-gold);
+    background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
     margin-bottom: 1rem;
     text-align: center;
 }
@@ -618,13 +501,19 @@ body {
 }
 .form-group input:focus, .form-group select:focus {
     outline: none;
-    border-color: var(--rose-gold);
+    border-background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
     box-shadow: 0 0 0 3px var(--blush-pink-dark);
 }
 .form-confirmation {
     background-color: var(--blush-pink-light);
     border: 1px solid var(--rose-gold);
-    color: var(--rose-gold);
+    background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
     padding: 1rem;
     border-radius: var(--border-radius);
     text-align: center;
@@ -701,7 +590,10 @@ body {
     min-width: 300px;
 }
 .contact-info h3 {
-    color: var(--rose-gold);
+    background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
     margin-bottom: 1rem;
 }
 .contact-info p {
@@ -713,7 +605,10 @@ body {
 .contact-info svg {
     width: 20px;
     height: 20px;
-    color: var(--rose-gold);
+    background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 .contact-map {
     flex: 1.5;
@@ -739,7 +634,10 @@ body {
 /*  12. Footer Section */
 /* ------------------- */
 .footer {
-  background-color: var(--rose-gold);
+  background-background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   color: var(--cream-white);
   padding: 2rem 0;
   text-align: center;
@@ -781,7 +679,10 @@ body {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background-color: var(--rose-gold);
+    background-background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
     color: white;
     box-shadow: var(--shadow-lg);
     text-decoration: none;
@@ -844,7 +745,10 @@ body {
 }
 
 .modal-close:hover {
-  color: var(--rose-gold);
+  background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .product-details {
@@ -868,7 +772,10 @@ body {
 }
 
 .product-info h2 {
-  color: var(--rose-gold);
+  background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   margin-bottom: 1rem;
 }
 
@@ -891,7 +798,10 @@ body {
 .price {
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--rose-gold);
+  background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .duration {
@@ -904,7 +814,10 @@ body {
 }
 
 .includes-section h4, .addons-section h4 {
-  color: var(--rose-gold);
+  background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   margin-bottom: 0.5rem;
 }
 
@@ -920,7 +833,10 @@ body {
 
 .includes-section li:before {
   content: "✓";
-  color: var(--rose-gold);
+  background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   font-weight: bold;
   margin-right: 0.5rem;
 }
@@ -970,7 +886,10 @@ body {
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  color: var(--rose-gold);
+  background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .quantity-controls button:hover {
@@ -986,7 +905,10 @@ body {
 }
 
 .total-section h3 {
-  color: var(--rose-gold);
+  background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   margin-bottom: 0.5rem;
 }
 
@@ -1020,7 +942,10 @@ body {
 }
 
 .cart-header h2 {
-  color: var(--rose-gold);
+  background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   margin: 0;
 }
 
@@ -1041,7 +966,10 @@ body {
 }
 
 .item-info h4 {
-  color: var(--rose-gold);
+  background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   margin-bottom: 0.5rem;
 }
 
@@ -1059,7 +987,10 @@ body {
 
 .addon-tag {
   background: var(--blush-pink-light);
-  color: var(--rose-gold);
+  background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   padding: 0.25rem 0.5rem;
   border-radius: 0.5rem;
   font-size: 0.75rem;
@@ -1074,7 +1005,10 @@ body {
 
 .item-total {
   font-weight: 600;
-  color: var(--rose-gold);
+  background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .remove-btn {
@@ -1104,7 +1038,10 @@ body {
 }
 
 .cart-total h3 {
-  color: var(--rose-gold);
+  background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   margin-bottom: 0.5rem;
 }
 
@@ -1163,7 +1100,10 @@ body {
 }
 
 .testimonial-info h4 {
-    color: var(--rose-gold);
+    background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
     margin-bottom: 0.25rem;
     font-size: 1.1rem;
 }
@@ -1225,7 +1165,10 @@ body {
 }
 
 .process-step h3 {
-    color: var(--rose-gold);
+    background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
     margin-bottom: 1rem;
     font-size: 1.5rem;
 }
@@ -1261,7 +1204,10 @@ body {
 .promotion-card:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-lg);
-    border-color: var(--rose-gold);
+    border-background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .promo-badge {
@@ -1278,7 +1224,10 @@ body {
 }
 
 .promotion-card h3 {
-    color: var(--rose-gold);
+    background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
     margin-bottom: 1rem;
     font-size: 1.5rem;
 }
@@ -1298,7 +1247,10 @@ body {
 }
 
 .promo-code span {
-    color: var(--rose-gold);
+    background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
     font-weight: 600;
     font-size: 1.1rem;
 }
@@ -1355,7 +1307,10 @@ body {
 
 .btn-secondary {
     background: transparent;
-    color: var(--rose-gold);
+    background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
     border: 2px solid var(--rose-gold);
 }
 
@@ -1381,7 +1336,10 @@ body {
 .service-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 20px 40px rgba(162, 104, 102, 0.15);
-    border-color: var(--rose-gold);
+    border-background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .service-card::before {
@@ -1419,7 +1377,10 @@ body {
         display: block; /* Placeholder for a hamburger menu icon */
         background: none;
         border: none;
-        color: var(--rose-gold);
+        background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
         font-size: 2rem;
     }
 

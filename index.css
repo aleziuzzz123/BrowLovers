@@ -62,41 +62,43 @@ body {
 
 .btn {
   display: inline-block;
-  padding: 0.8rem 2rem;
-  border-radius: var(--border-radius);
+  padding: 0.6rem 1.8rem;
+  border-radius: 2rem;
   border: none;
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 0.95rem;
+  font-weight: 500;
   cursor: pointer;
   text-decoration: none;
   transition: all 0.3s ease;
   text-align: center;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 
 .btn-primary {
   background-color: var(--soft-pink);
   color: white;
   border: none;
-  box-shadow: 0 4px 15px rgba(248, 181, 193, 0.3);
+  box-shadow: 0 2px 8px rgba(248, 181, 193, 0.2);
 }
 
 .btn-primary:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(248, 181, 193, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(248, 181, 193, 0.3);
   background-color: #f5a3b0;
 }
 
 .btn-secondary {
   background-color: transparent;
   color: var(--soft-pink);
-  border: 2px solid var(--soft-pink);
+  border: 1px solid var(--soft-pink);
 }
 
 .btn-secondary:hover {
   background-color: var(--soft-pink);
   color: white;
   transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(248, 181, 193, 0.3);
+  box-shadow: 0 2px 8px rgba(248, 181, 193, 0.2);
 }
 
 /* ------------------- */

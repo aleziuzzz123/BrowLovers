@@ -1018,6 +1018,34 @@ const Stats = () => (
     </section>
 );
 
+const TrustBadges = () => (
+    <section className="trust-section">
+        <div className="container">
+            <div className="trust-content">
+                <h3>Confianza y Garantía</h3>
+                <div className="trust-badges">
+                    <div className="trust-badge">
+                        <Icon path="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" className="trust-icon" />
+                        <span>Materiales Premium</span>
+                    </div>
+                    <div className="trust-badge">
+                        <Icon path="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" className="trust-icon" />
+                        <span>Certificación Profesional</span>
+                    </div>
+                    <div className="trust-badge">
+                        <Icon path="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" className="trust-icon" />
+                        <span>Garantía 48h</span>
+                    </div>
+                    <div className="trust-badge">
+                        <Icon path="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" className="trust-icon" />
+                        <span>Higiene Certificada</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+);
+
 const Process = () => (
     <section className="process-section">
         <div className="container">
@@ -1616,6 +1644,7 @@ const App = () => {
         <main>
             <Hero />
             <Stats />
+            <TrustBadges />
             <Services onServiceClick={handleServiceClick} />
             <Process />
             <Video />

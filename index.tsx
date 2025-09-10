@@ -1420,11 +1420,13 @@ const Video = () => (
                     <div className="video-wrapper">
                         <video 
                             className="hero-video"
-                            poster="/images/videos/video-poster.jpg"
                             controls
                             preload="metadata"
+                            autoPlay
+                            muted
+                            loop
                         >
-                            <source src="/images/videos/browloversvideo.mp4" type="video/mp4" />
+                            <source src="./images/videos/browloversvideo.mp4" type="video/mp4" />
                             Tu navegador no soporta el elemento de video.
                         </video>
                         <div className="video-overlay">

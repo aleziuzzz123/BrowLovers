@@ -74,7 +74,7 @@ body {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
+  background-color: var(--soft-pink);
   color: white;
   border: none;
   box-shadow: 0 4px 15px rgba(248, 181, 193, 0.3);
@@ -83,7 +83,7 @@ body {
 .btn-primary:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 25px rgba(248, 181, 193, 0.4);
-  background: linear-gradient(135deg, var(--rose-gold), var(--soft-pink));
+  background-color: #f5a3b0;
 }
 
 .btn-secondary {
@@ -96,6 +96,7 @@ body {
   background-color: var(--soft-pink);
   color: white;
   transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(248, 181, 193, 0.3);
 }
 
 /* ------------------- */
@@ -1516,65 +1517,6 @@ body {
     font-size: 0.9rem;
 }
 
-/* Enhanced Button Styles */
-.btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    padding: 0.8rem 2rem;
-    border-radius: var(--border-radius);
-    border: none;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    text-decoration: none;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-}
-
-.btn::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-    transition: left 0.5s;
-}
-
-.btn:hover::before {
-    left: 100%;
-}
-
-.btn-primary {
-    background: linear-gradient(135deg, var(--rose-gold), #d4af37);
-    color: white;
-    box-shadow: 0 4px 15px rgba(162, 104, 102, 0.3);
-}
-
-.btn-primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(162, 104, 102, 0.4);
-}
-
-.btn-secondary {
-    background: transparent;
-    background: linear-gradient(135deg, var(--soft-pink), var(--rose-gold));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-    border: 2px solid var(--rose-gold);
-}
-
-.btn-secondary:hover {
-    background: var(--rose-gold);
-    color: white;
-    transform: translateY(-2px);
-}
 
 /* Enhanced Service Cards */
 .service-card {

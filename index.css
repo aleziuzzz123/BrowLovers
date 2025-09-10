@@ -75,29 +75,29 @@ body {
 }
 
 .btn-primary {
-  background-color: var(--dusty-rose);
+  background-color: #4a4a4a;
   color: white;
   border: none;
-  box-shadow: 0 2px 8px rgba(212, 165, 165, 0.3);
+  box-shadow: 0 2px 8px rgba(74, 74, 74, 0.3);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(212, 165, 165, 0.4);
-  background-color: var(--mauve);
+  box-shadow: 0 4px 12px rgba(74, 74, 74, 0.4);
+  background-color: #3a3a3a;
 }
 
 .btn-secondary {
   background-color: transparent;
-  color: var(--catalog-brown);
-  border: 2px solid var(--catalog-brown);
+  color: #4a4a4a;
+  border: 2px solid #4a4a4a;
 }
 
 .btn-secondary:hover {
-  background-color: var(--catalog-brown);
+  background-color: #4a4a4a;
   color: white;
   transform: translateY(-2px);
-  box-shadow: 0 2px 8px rgba(139, 111, 71, 0.3);
+  box-shadow: 0 2px 8px rgba(74, 74, 74, 0.3);
 }
 
 /* ------------------- */
@@ -124,7 +124,7 @@ body {
 .nav-logo {
   font-size: 1.8rem;
   font-weight: 700;
-  color: var(--catalog-brown);
+  color: #4a4a4a;
   margin-bottom: 1.5rem;
   text-decoration: none;
 }

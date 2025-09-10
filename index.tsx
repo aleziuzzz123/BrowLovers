@@ -1046,38 +1046,6 @@ const TrustBadges = () => (
     </section>
 );
 
-const Process = () => (
-    <section className="process-section">
-        <div className="container">
-            <div className="process-header">
-                <h2 className="section-title">Cómo funciona</h2>
-                <p className="section-subtitle">Un proceso simple y elegante para tu experiencia de belleza perfecta.</p>
-            </div>
-            <div className="process-steps">
-                <div className="process-step">
-                    <div className="step-number">1</div>
-                    <h3>Reserva tu cita</h3>
-                    <p>Elige tu servicio favorito y selecciona el horario que mejor te convenga.</p>
-                </div>
-                <div className="process-step">
-                    <div className="step-number">2</div>
-                    <h3>Paga tu depósito</h3>
-                    <p>Aparta tu cita con solo el 30% del costo total de manera segura.</p>
-                </div>
-                <div className="process-step">
-                    <div className="step-number">3</div>
-                    <h3>Disfruta tu servicio</h3>
-                    <p>Relájate mientras nuestras expertas trabajan su magia en ti.</p>
-                </div>
-                <div className="process-step">
-                    <div className="step-number">4</div>
-                    <h3>Paga el saldo</h3>
-                    <p>Completa tu pago al finalizar el servicio y disfruta tu nuevo look.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-);
 
 const Services = ({ onServiceClick }) => (
     <section id="services" className="section services-section">
@@ -1416,17 +1384,6 @@ const Footer = () => (
     </footer>
 );
 
-const FloatingButtons = () => (
-    <div className="floating-buttons">
-         <a href="#booking" className="floating-btn" aria-label="Reservar cita">
-            <Icon path="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0h18M12 12.75h.008v.008H12v-.008z" />
-        </a>
-        <a href="https://wa.me/529981234567" target="_blank" rel="noopener noreferrer" className="floating-btn whatsapp" aria-label="Contactar por WhatsApp">
-            <Icon path="M1.5 8.67v8.58a3 3 0 003 3h8.58a3 3 0 003-3V1.5a3 3 0 00-3-3h-1.17a3 3 0 00-2.512 1.257l-4.716 5.499a3 3 0 00-.284 1.415z" className="w-6 h-6" transform="rotate(270 12 12)"/>
-            <Icon path="M12 18.75a.75.75 0 00.75-.75v-3.5a.75.75 0 00-1.5 0v3.5a.75.75 0 00.75.75zM12 12.75a.75.75 0 00.75-.75v-.008a.75.75 0 00-1.5 0v.008a.75.75 0 00.75.75z" className="w-6 h-6"/>
-        </a>
-    </div>
-);
 
 
 // New sections for enhanced homepage
@@ -1651,7 +1608,6 @@ const App = () => {
             <Stats />
             <TrustBadges />
             <Services onServiceClick={handleServiceClick} />
-            <Process />
             <Video />
             <Prices />
             <Gallery />
@@ -1661,7 +1617,6 @@ const App = () => {
             <Contact />
         </main>
         <Footer />
-        <FloatingButtons />
         <ServiceModal 
             service={selectedService} 
             isOpen={isModalOpen} 

@@ -10,7 +10,7 @@ plugins = []
 publish = "/Users/alexjego/Downloads/browlovers/dist"
 publishOrigin = "config"
 commandOrigin = "config"
-command = "npm run build"
+command = "npm run build && cp -r images dist/"
 
 [build.environment]
 NODE_VERSION = "18"
